@@ -11,9 +11,17 @@ using SmartCropAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Railway/Docker compatible port
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5063";
-builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+// Configure PostgreSQL Database
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new Exception(
+        "ConnectionStrings__DefaultConnection is missing in Railway Variables.");
+}
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
 
 // Add services to the container.
 builder.Services.AddControllers();
