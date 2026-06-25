@@ -36,9 +36,12 @@ builder.Services.AddCors(options =>
     options.AddPolicy("DefaultPolicy", policy =>
     {
         policy.AllowAnyHeader()
-              .AllowAnyMethod()
-              .WithOrigins("http://localhost:4200", "https://agrolense.vercel.app")
-              .AllowCredentials();
+      .AllowAnyMethod()
+      .WithOrigins(
+          "http://localhost:4200",
+          "https://agrolense.vercel.app"
+      )
+      .AllowCredentials();
     });
 });
 
