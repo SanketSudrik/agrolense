@@ -1,0 +1,107 @@
+<div class="auth-page">
+  <div class="auth-container">
+    <!-- Left: Branding Panel -->
+    <div class="auth-branding">
+      <div class="top-bar">
+      </div>
+      <div class="branding-content">
+        <mat-icon class="branding-icon">eco</mat-icon>
+        <h1>Join Smart Crop</h1>
+        <p>Start protecting your crops with AI-powered disease detection today.</p>
+        <div class="branding-stats">
+          <div class="stat-item">
+            <strong>50+</strong>
+            <span>Diseases Detected</span>
+          </div>
+          <div class="stat-item">
+            <strong>95%</strong>
+            <span>Accuracy Rate</span>
+          </div>
+          <div class="stat-item">
+            <strong>1000+</strong>
+            <span>Farmers Helped</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Register Form -->
+    <div class="auth-form-panel">
+      <div class="form-wrapper">
+        <h2>Create an Account</h2>
+        <p class="subtitle">Join us to start detecting and treating crop diseases using AI.</p>
+
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="auth-form">
+          <!-- Name -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" placeholder="Enter your name" maxlength="50">
+            <mat-icon matPrefix>person</mat-icon>
+            @if (registerForm.get('name')?.hasError('required') && registerForm.get('name')?.touched) {
+              <mat-error>Name is required</mat-error>
+            }
+            @if (registerForm.get('name')?.hasError('minlength') && registerForm.get('name')?.touched) {
+              <mat-error>Name must be at least 2 characters</mat-error>
+            }
+            @if (registerForm.get('name')?.hasError('maxlength') && registerForm.get('name')?.touched) {
+              <mat-error>Name cannot exceed 50 characters</mat-error>
+            }
+          </mat-form-field>
+
+          <!-- Email -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email Address</mat-label>
+            <input matInput formControlName="email" type="email" placeholder="farmer@example.com">
+            <mat-icon matPrefix>email</mat-icon>
+            @if (registerForm.get('email')?.hasError('required') && registerForm.get('email')?.touched) {
+              <mat-error>Email is required</mat-error>
+            }
+            @if (registerForm.get('email')?.hasError('email') && registerForm.get('email')?.touched) {
+              <mat-error>Please enter a valid email</mat-error>
+            }
+          </mat-form-field>
+
+          <!-- Password -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password"
+                   [type]="hidePassword ? 'password' : 'text'"
+                   placeholder="Minimum 6 characters">
+            <mat-icon matPrefix>lock</mat-icon>
+            <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            @if (registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched) {
+              <mat-error>Password is required</mat-error>
+            }
+            @if (registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.touched) {
+              <mat-error>Password must be at least 6 characters</mat-error>
+            }
+          </mat-form-field>
+
+          <!-- Submit Button -->
+          <button mat-raised-button color="primary" type="submit"
+                  class="submit-btn" [disabled]="isLoading">
+            @if (isLoading) {
+              <ng-container>
+                <mat-spinner diameter="20" class="btn-spinner"></mat-spinner>
+                <span>Creating account...</span>
+              </ng-container>
+            } @else {
+              <ng-container>
+                <mat-icon>person_add</mat-icon>
+                <span>Register</span>
+              </ng-container>
+            }
+          </button>
+        </form>
+
+        <!-- Login Link -->
+        <p class="auth-link">
+          Already have an account?
+          <a routerLink="/login">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+{
+  "NAV": {
+    "DASHBOARD": "डैशबोर्ड",
+    "UPLOAD_IMAGE": "छवि अपलोड करें",
+    "PREDICTION_HISTORY": "भविष्यवाणी इतिहास",
+    "REPORTS": "रिपोर्ट",
+    "PROFILE": "प्रोफ़ाइल",
+    "LOGOUT": "लॉगआउट"
+  },
+  "DASHBOARD": {
+    "FARMER_TITLE": "किसान डैशबोर्ड",
+    "ADMIN_TITLE": "एडमिन डैशबोर्ड",
+    "TOTAL_PREDICTIONS": "कुल भविष्यवाणियां",
+    "RECENT_DISEASES": "हाल की बीमारियाँ",
+    "QUICK_ACTIONS": "त्वरित कार्य",
+    "TOTAL_USERS": "कुल उपयोगकर्ता",
+    "TOTAL_DISEASES": "कुल बीमारियाँ",
+    "TOTAL_CROPS": "कुल फसलें",
+    "SYSTEM_MANAGEMENT": "सिस्टम प्रबंधन",
+    "SETTINGS": "सेटिंग्स",
+    "HEALTHY_PLANTS": "स्वस्थ पौधे"
+  },
+  "UPLOAD": {
+    "TITLE": "फसल की छवि अपलोड करें",
+    "SUBTITLE": "हमारा एआई बीमारियों का पता लगाने के लिए छवि का विश्लेषण करेगा",
+    "DRAG_DROP": "फसल के पत्ते की छवि यहां क्लिक करें या खींचें",
+    "ANALYZE": "छवि का विश्लेषण करें"
+  },
+  "RESULT": {
+    "TITLE": "विश्लेषण परिणाम",
+    "DISEASE_NAME": "पहचानी गई बीमारी",
+    "CONFIDENCE": "विश्वास स्कोर",
+    "FERTILIZER_RECOMMENDATION": "उर्वरक सिफारिश",
+    "APPLICATION_RATE": "आवेदन दर",
+    "SCAN_ANOTHER": "दूसरी छवि स्कैन करें",
+    "PLANT_CROP": "पौधा / फसल",
+    "GENERAL_CROP": "सामान्य फसल",
+    "DISEASE_DESCRIPTION": "रोग का विवरण",
+    "TREATMENT_PLAN": "उपचार योजना",
+    "PREVENTION_STRATEGY": "रोकथाम की रणनीति"
+  },
+  "HISTORY": {
+    "TITLE": "भविष्यवाणी इतिहास",
+    "DATE": "तारीख",
+    "DISEASE": "बीमारी",
+    "CONFIDENCE": "विश्वास",
+    "IMAGE": "छवि",
+    "NO_DATA": "अभी तक कोई भविष्यवाणी नहीं मिली।",
+    "VIEW_HISTORY": "इतिहास देखें",
+    "HISTORY_SUBTITLE": "पिछले रोग निदानों की समीक्षा करें, समय के साथ फसल के स्वास्थ्य की निगरानी करें, और अनुशंसित उपचारों पर फिर से विचार करें।"
+  },
+  "COMMON": {
+    "CANCEL": "रद्द करें",
+    "BACK_TO_DASHBOARD": "डैशबोर्ड पर वापस जाएं",
+    "ACTIONS": "कार्य"
+  }
+}

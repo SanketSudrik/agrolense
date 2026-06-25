@@ -1,0 +1,22 @@
+<div class="sidebar-container">
+  <mat-nav-list class="sidebar-nav">
+    @for (item of navItems; track item.route) {
+      <a mat-list-item
+         [routerLink]="item.route"
+         routerLinkActive="active-link"
+         class="nav-item">
+        <mat-icon matListItemIcon class="nav-icon">{{ item.icon }}</mat-icon>
+        <span matListItemTitle class="nav-label">{{ item.label | dynamicTranslate }}</span>
+      </a>
+    }
+  </mat-nav-list>
+
+  <!-- Bottom Promo Card -->
+  <div class="sidebar-promo">
+    <div class="promo-card">
+      <div class="promo-icon"><mat-icon>eco</mat-icon></div>
+      <h4>Smart farming starts here</h4>
+      <p>Upload crop images and get AI-powered insights.</p>
+    </div>
+  </div>
+</div>

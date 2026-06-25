@@ -1,0 +1,70 @@
+<mat-toolbar class="navbar">
+  <div class="navbar-inner">
+    <!-- Sidebar Toggle -->
+    <button mat-icon-button (click)="onToggleSidebar()" class="btn-toggle">
+      <mat-icon>menu_open</mat-icon>
+    </button>
+ 
+    <!-- Premium Brand -->
+    <a routerLink="/crop-upload" class="brand">
+      <div class="logo-orb">
+        <mat-icon>eco</mat-icon>
+      </div>
+      <div class="brand-meta">
+        <span class="brand-name">Agrolense</span>
+        <span class="brand-tagline">AI Powered Agriculture</span>
+      </div>
+    </a>
+ 
+    <!-- Search Bar -->
+    <div class="search-container">
+      <mat-icon class="search-icon">search</mat-icon>
+      <input type="text" class="search-input" placeholder="Search anything...">
+    </div>
+ 
+    <span class="spacer"></span>
+ 
+    <!-- Desktop Actions -->
+    <div class="nav-actions">
+      <!-- Language -->
+      <button mat-button [matMenuTriggerFor]="langMenu" class="btn-pill-light lang-btn">
+        @for (l of languages; track l.code) {
+          @if (l.code === currentLang) {
+            <mat-icon>language</mat-icon>
+            <span class="lang-label">{{ l.nativeName }} ({{ l.code.toUpperCase() }})</span>
+          }
+        }
+        <mat-icon>expand_more</mat-icon>
+      </button>
+      <mat-menu #langMenu="matMenu" class="modern-menu">
+        <div class="menu-search-box" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+          <mat-icon>search</mat-icon>
+          <input type="text" [(ngModel)]="searchQuery" (input)="filterLanguages()" placeholder="Search language..." autocomplete="off">
+        </div>
+        
+        <div class="menu-scrollable">
+          @for (lang of filteredLanguages; track lang.code) {
+            <button mat-menu-item (click)="switchLanguage(lang.code)" [class.active-lang]="lang.code === currentLang">
+              <span>{{ lang.nativeName }} ({{ lang.code.toUpperCase() }})</span>
+            </button>
+          }
+          @if (filteredLanguages.length === 0) {
+            <div class="no-results">No languages found</div>
+          }
+        </div>
+      </mat-menu>
+
+      <!-- Theme Toggle -->
+      <button mat-icon-button class="theme-toggle">
+        <mat-icon>light_mode</mat-icon>
+      </button>
+
+      <!-- User Profile Pill -->
+      <button mat-button class="btn-pill-user">
+        <div class="user-avatar-small">{{ userName ? userName.charAt(0).toUpperCase() : 'U' }}</div>
+        <span class="user-name">{{ userName || 'User' }}</span>
+        <mat-icon class="arrow">expand_more</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>

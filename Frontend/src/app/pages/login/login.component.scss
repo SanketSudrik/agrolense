@@ -1,0 +1,315 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  padding: 24px;
+  font-family: 'Inter', Roboto, "Helvetica Neue", sans-serif;
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  max-width: 940px;
+  /* Slightly widened from 900px to give content breathing room at 100% zoom */
+  min-height: 540px;
+  /* Adjusted from 500px to perfectly fit the form contents without clipping */
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* ─── Branding Panel ─── */
+.auth-branding {
+  flex: 1.2;
+  background: #10b981;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  position: relative;
+}
+
+.branding-content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  max-width: 340px;
+  margin-top: 16px;
+
+  .branding-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+}
+
+.branding-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.95;
+
+    mat-icon {
+      font-size: 24px;
+      width: 24px;
+      height: 24px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+/* ─── Form Panel ─── */
+.auth-form-panel {
+  flex: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 360px;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-mdc-form-field-flex {
+  background-color: #f8fafc !important;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 46px;
+  /* Enhanced height for better target balance */
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 12px;
+  /* Balanced down from 16px to conserve vertical room */
+  background: #3f51b5;
+  /* Updated to match the royal blue login button in your screenshot */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+
+  &:hover:not([disabled]) {
+    background: #303f9f;
+    transform: translateY(-1px);
+    /* Reduced slightly to prevent edge layout stuttering */
+    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.2);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .btn-spinner {
+    display: inline-block;
+  }
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  /* Reduced from 24px to safely fit all content within the panel container */
+  font-size: 1rem;
+  /* INCREASED */
+  color: #64748b;
+
+  a {
+    color: #10b981;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 22px 0;
+  /* Reduced from 32px to stop elements from being pushed outside at 100% zoom */
+  /* INCREASED */
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  &::before {
+    margin-right: 16px;
+  }
+
+  &::after {
+    margin-left: 16px;
+  }
+}
+
+.guest-btn {
+  width: 100%;
+  height: 46px;
+  /* Kept aligned with the submit button height */
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #f43f5e;
+  /* Updated to match the pink/red border from your screenshot */
+  background: transparent;
+  color: #f43f5e;
+  /* Updated to match pink text styling from your screenshot */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+
+  mat-icon {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background: #fff1f2;
+  }
+}
+
+.top-bar {
+  position: absolute;
+  top: 32px;
+  /* Pushed outwards */
+  left: 32px;
+  z-index: 10;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+  .auth-container {
+    max-width: 900px;
+  }
+
+  .auth-branding,
+  .auth-form-panel {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    max-width: 500px;
+    min-height: auto;
+    /* Changed to auto so mobile layout stacks dynamically without clipping */
+  }
+
+  .auth-branding {
+    padding: 40px 24px;
+    text-align: center;
+
+    .branding-content {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .branding-icon {
+      margin: 0 auto 16px;
+    }
+
+    .branding-features {
+      display: none;
+    }
+  }
+
+  .top-bar {
+    top: 16px;
+    left: 16px;
+  }
+
+  .auth-form-panel {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-page {
+    padding: 16px;
+  }
+
+  .auth-container {
+    border-radius: 16px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 1.6rem;
+  }
+
+  .submit-btn,
+  .guest-btn {
+    height: 48px;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "smart-crop-app",
+  "version": "1.0.0",
+  "description": "Smart Crop Management System - Angular Frontend",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:prod": "ng serve --configuration production"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^20.0.0",
+    "@angular/cdk": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/material": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-browser-dynamic": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@ngx-translate/core": "^16.0.0",
+    "@ngx-translate/http-loader": "^16.0.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.0.0",
+    "@angular/cli": "^20.0.0",
+    "@angular/compiler-cli": "^20.0.0",
+    "typescript": "~5.8.0"
+  }
+}

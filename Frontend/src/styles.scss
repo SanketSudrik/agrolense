@@ -1,0 +1,193 @@
+/* ═══ GLOBAL DESIGN SYSTEM ═══ */
+:root {
+  --primary-green: #b91c1c; /* Premium deep crimson/red */
+  --vibrant-green: #ef4444; /* Vibrant accent red */
+  --surface-white: #ffffff;
+  --bg-soft: #f8fafc;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --danger: #ef4444;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.08);
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: var(--bg-soft);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism Helper */
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Responsive Container */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .responsive-grid {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .responsive-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+/* Utilities */
+.d-none-mobile { display: none !important; }
+@media (min-width: 768px) {
+  .d-none-mobile { display: inline !important; }
+}
+.w-100 { width: 100% !important; }
+.h-100 { height: 100% !important; }
+/* Modern Pill Button */
+.btn-pill {
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease !important;
+}
+
+.btn-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ═══ LANGUAGE DROPDOWN — GLOBAL OVERLAY STYLES ═══ */
+/* Material menus render in CDK overlay outside component scope */
+
+/* Widen the panel */
+.modern-menu {
+  min-width: 220px !important;
+  border-radius: 12px !important;
+}
+
+/* Every language menu item */
+.modern-menu .mat-mdc-menu-item {
+  height: 36px !important;
+  min-height: 36px !important;
+  padding: 0 12px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* The text inside each item */
+.modern-menu .mat-mdc-menu-item,
+.modern-menu .mat-mdc-menu-item span,
+.modern-menu .mat-mdc-menu-item .mdc-list-item__primary-text {
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+}
+
+/* Menu content wrapper */
+.modern-menu .mat-mdc-menu-content {
+  padding: 8px 0 !important;
+}
+
+/* Hover state */
+.modern-menu .mat-mdc-menu-item:hover {
+  background: #f0fdf4 !important;
+}
+
+/* Active/selected state */
+.modern-menu .mat-mdc-menu-item.active-lang {
+  background: #ecfdf5 !important;
+  color: #10b981 !important;
+}
+
+/* Fix overlay z-index to be higher than navbar (1100) */
+.cdk-overlay-container, 
+.cdk-global-overlay-wrapper {
+  z-index: 2000 !important;
+}
+
+/* Language Dropdown Search Box */
+.menu-search-box {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  margin-bottom: 6px;
+}
+
+.menu-search-box mat-icon {
+  color: var(--text-muted);
+  margin-right: 6px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.menu-search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--text-dark);
+}
+
+.menu-search-box input::placeholder {
+  color: #94a3b8;
+}
+
+/* Scrollable container for the language list */
+.menu-scrollable {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.menu-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu-scrollable::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.menu-scrollable::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.menu-scrollable::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.no-results {
+  padding: 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+}

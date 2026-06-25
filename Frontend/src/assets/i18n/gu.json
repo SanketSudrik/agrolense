@@ -1,0 +1,81 @@
+{
+  "NAV": {
+    "DASHBOARD": "Dashboard",
+    "UPLOAD_IMAGE": "Upload Image",
+    "PREDICTION_HISTORY": "Prediction History",
+    "REPORTS": "Reports",
+    "PROFILE": "Profile",
+    "LOGOUT": "Logout"
+  },
+  "DASHBOARD": {
+    "FARMER_TITLE": "Farmer Dashboard",
+    "ADMIN_TITLE": "Admin Dashboard",
+    "TOTAL_PREDICTIONS": "Total Predictions",
+    "RECENT_DISEASES": "Recent Diseases Found",
+    "QUICK_ACTIONS": "Quick Actions",
+    "TOTAL_USERS": "Total Users",
+    "TOTAL_DISEASES": "Total Diseases",
+    "TOTAL_CROPS": "Total Crops",
+    "SYSTEM_MANAGEMENT": "સિસ્ટમ મેનેજમેન્ટ",
+    "SETTINGS": "સેટિંગ્સ",
+    "HEALTHY_PLANTS": "તંદુરસ્ત છોડ"
+  },
+  "UPLOAD": {
+    "TITLE": "Upload Crop Image",
+    "SUBTITLE": "Our AI will analyze the image to detect diseases",
+    "DRAG_DROP": "Click or drag & drop a crop leaf image here",
+    "ANALYZE": "Analyze Image"
+  },
+  "RESULT": {
+    "TITLE": "Analysis Result",
+    "DISEASE_NAME": "Detected Disease",
+    "CONFIDENCE": "Confidence Score",
+    "FERTILIZER_RECOMMENDATION": "Fertilizer Recommendation",
+    "APPLICATION_RATE": "Application Rate",
+    "SCAN_ANOTHER": "અન્ય છબી સ્કેન કરો",
+    "PLANT_CROP": "છોડ / પાક",
+    "GENERAL_CROP": "સામાન્ય પાક",
+    "DISEASE_DESCRIPTION": "રોગનું વર્ણન",
+    "TREATMENT_PLAN": "સારવાર યોજના",
+    "PREVENTION_STRATEGY": "નિવારણ વ્યૂહરચના"
+  },
+  "HISTORY": {
+    "TITLE": "Prediction History",
+    "DATE": "Date",
+    "DISEASE": "Disease",
+    "CONFIDENCE": "Confidence",
+    "IMAGE": "Image",
+    "NO_DATA": "હજી સુધી કોઈ આગાહીઓ મળી નથી.",
+    "VIEW_HISTORY": "ઇતિહાસ જુઓ",
+    "HISTORY_SUBTITLE": "ભૂતકાળના રોગ નિદાનની સમીક્ષા કરો, સમય જતાં પાકની સ્વાસ્થ્યની વિસંગતતાઓને ટ્રૅક કરો અને ભલામણ કરેલ સારવારની ફરી મુલાકાત લો."
+  },
+  "COMMON": {
+    "CANCEL": "Cancel",
+    "BACK_TO_DASHBOARD": "Back to Dashboard",
+    "ACTIONS": "Actions"
+  },
+  "LOGIN": {
+    "TITLE": "Welcome Back",
+    "SUBTITLE": "Login to your account to continue",
+    "EMAIL": "Email Address",
+    "PASSWORD": "Password",
+    "LOGGING_IN": "Logging in...",
+    "SUBMIT": "Login",
+    "NO_ACCOUNT": "Don't have an account?",
+    "REGISTER_LINK": "Register here",
+    "FEATURE_1": "AI Disease Detection",
+    "FEATURE_2": "Crop Health Insights",
+    "FEATURE_3": "Fertilizer Guidance"
+  },
+  "REGISTER": {
+    "TITLE": "Create Account",
+    "SUBTITLE": "Sign up to protect your crops",
+    "FULL_NAME": "Full Name",
+    "EMAIL": "Email Address",
+    "PASSWORD": "Password",
+    "ROLE": "Account Role",
+    "SUBMIT": "Register",
+    "HAVE_ACCOUNT": "Already have an account?",
+    "LOGIN_LINK": "Login here"
+  }
+}

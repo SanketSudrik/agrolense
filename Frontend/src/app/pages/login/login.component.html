@@ -1,0 +1,101 @@
+<div class="auth-page">
+  <div class="auth-container">
+    <!-- Left: Branding Panel -->
+    <div class="auth-branding">
+      <div class="top-bar">
+      </div>
+      <div class="branding-content">
+        <mat-icon class="branding-icon">eco</mat-icon>
+        <h1>Smart Crop</h1>
+        <p>AI-Powered Crop Disease Detection & Management System</p>
+        <div class="branding-features">
+          <div class="feature-item">
+            <mat-icon>biotech</mat-icon>
+            <span>Instant AI-powered disease detection</span>
+          </div>
+          <div class="feature-item">
+            <mat-icon>science</mat-icon>
+            <span>Accurate treatment recommendations</span>
+          </div>
+          <div class="feature-item">
+            <mat-icon>insights</mat-icon>
+            <span>Track historical crop health data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Login Form -->
+    <div class="auth-form-panel">
+      <div class="form-wrapper">
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Log in to manage your crop health records</p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="auth-form">
+          <!-- Email -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email Address</mat-label>
+            <input matInput formControlName="email" type="email" placeholder="farmer@example.com">
+            <mat-icon matPrefix>email</mat-icon>
+            @if (loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched) {
+              <mat-error>Email is required</mat-error>
+            }
+            @if (loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched) {
+              <mat-error>Please enter a valid email</mat-error>
+            }
+          </mat-form-field>
+
+          <!-- Password -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password"
+                   [type]="hidePassword ? 'password' : 'text'"
+                   placeholder="Enter your password">
+            <mat-icon matPrefix>lock</mat-icon>
+            <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            @if (loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched) {
+              <mat-error>Password is required</mat-error>
+            }
+            @if (loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched) {
+              <mat-error>Password must be at least 6 characters</mat-error>
+            }
+          </mat-form-field>
+
+          <!-- Submit Button -->
+          <button mat-raised-button color="primary" type="submit"
+                  class="submit-btn" [disabled]="isLoading">
+            @if (isLoading) {
+              <ng-container>
+                <mat-spinner diameter="20" class="btn-spinner"></mat-spinner>
+                <span>Logging in...</span>
+              </ng-container>
+            } @else {
+              <ng-container>
+                <mat-icon>login</mat-icon>
+                <span>Login</span>
+              </ng-container>
+            }
+          </button>
+        </form>
+
+        <!-- Register Link -->
+        <p class="auth-link">
+          Don't have an account?
+          <a routerLink="/register">Register here</a>
+        </p>
+
+        <div class="divider">
+          <span>OR</span>
+        </div>
+
+        <!-- Guest Upload Button -->
+        <button mat-stroked-button color="accent" type="button" class="guest-btn" (click)="continueAsGuest()">
+          <mat-icon>cloud_upload</mat-icon>
+          Upload Image (Guest Mode)
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

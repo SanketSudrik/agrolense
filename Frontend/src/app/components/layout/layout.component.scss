@@ -1,0 +1,51 @@
+/* Safely anchors the entire layout container exactly below your 52px header */
+.app-container {
+  position: absolute;
+  top: 52px;
+  /* Matches your navbar height so content is never hidden underneath */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Sidebar structure definitions */
+.app-sidenav {
+  border-right: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Base canvas configuration */
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #f8fafc;
+  /* Matches the new clean dashboard theme */
+}
+
+/* Fluid track that lets your internal dashboard components layout perfectly edge-to-edge */
+.content-wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keeps your newly added footer aligned correctly at the bottom of the scroll track */
+app-footer {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* ─── Responsive Adjustments ─── */
+@media (max-width: 768px) {
+  .app-container {
+    top: 80px;
+    /* Updates layout offset if your navbar scales down on mobile viewports */
+  }
+
+  .app-sidenav {
+    width: 280px;
+  }
+}

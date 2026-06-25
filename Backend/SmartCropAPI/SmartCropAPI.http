@@ -1,0 +1,6 @@
+@SmartCropAPI_HostAddress = http://localhost:5063
+
+GET {{SmartCropAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,2067 @@
+{
+  "version": "2.0",
+  "model": "PlantVillage-EfficientNet-38",
+  "lastUpdated": "2026-06-18",
+  "totalClasses": 38,
+  "classes": [
+    {
+      "index": 0,
+      "raw": "Apple___Apple_scab",
+      "plant": "Apple",
+      "disease": "Apple Scab",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Venturia inaequalis) causing dark olive-green to black velvety spots on leaves, fruit, and stems. Infected leaves may curl and drop prematurely. Fruit develops rough, corky lesions reducing market value.",
+        "scientificName": "Venturia inaequalis",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply fungicides such as Captan or Mancozeb every 7-10 days during wet weather. Remove and destroy infected leaves and fruit. Prune to improve air circulation within the canopy.",
+        "prevention": "Plant scab-resistant varieties (Liberty, Enterprise, Freedom). Rake and destroy fallen leaves in autumn. Apply preventative fungicide sprays from bud break through petal fall. Maintain proper tree spacing.",
+        "fertilizer": "Balanced NPK (10-10-10) with added calcium. Avoid excessive nitrogen which promotes susceptible new growth. Apply compost in early spring.",
+        "affectedParts": ["Leaves", "Fruit", "Stems"],
+        "favorableConditions": "Cool, wet spring weather (15-25°C) with prolonged leaf wetness. Humid conditions with frequent rainfall.",
+        "spreadMechanism": "Wind-dispersed ascospores from fallen infected leaves in spring. Secondary spread through rain-splashed conidia."
+      }
+    },
+    {
+      "index": 1,
+      "raw": "Apple___Black_rot",
+      "plant": "Apple",
+      "disease": "Black Rot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Botryosphaeria obtusa) causing frogeye leaf spots (tan centers with dark borders), cankers on limbs, and black rot on fruit. Mummified fruit serves as primary inoculum source.",
+        "scientificName": "Botryosphaeria obtusa",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Prune out cankers and remove mummified fruit. Apply fungicides containing Captan or Thiophanate-methyl during bloom. Remove dead wood from orchard floor.",
+        "prevention": "Maintain good sanitation by removing dead wood and infected fruit. Ensure proper pruning for air circulation. Avoid leaving pruning wounds exposed during wet weather.",
+        "fertilizer": "Potassium-rich fertilizer (0-0-60) to strengthen cell walls. Avoid excessive nitrogen. Apply calcium amendments to improve fruit quality.",
+        "affectedParts": ["Leaves", "Fruit", "Branches"],
+        "favorableConditions": "Warm humid weather (20-30°C). Rain and high humidity promote spore germination. Drought-stressed trees are more susceptible.",
+        "spreadMechanism": "Rain-splashed spores from cankers and mummified fruit. Wind dispersal over short distances."
+      }
+    },
+    {
+      "index": 2,
+      "raw": "Apple___Cedar_apple_rust",
+      "plant": "Apple",
+      "disease": "Cedar Apple Rust",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Gymnosporangium juniperi-virginianae) causing bright yellow-orange spots on apple leaves. Spots develop small tube-like structures (aecia) on the undersides. Requires both apple and cedar/juniper hosts to complete life cycle.",
+        "scientificName": "Gymnosporangium juniperi-virginianae",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply Myclobutanil or Mancozeb-based fungicides when orange spots first appear. Remove galls from nearby cedar/juniper trees before they release spores in spring.",
+        "prevention": "Plant rust-resistant apple varieties (Liberty, Redfree, Freedom). Remove nearby Eastern Red Cedar and juniper trees within 2 miles if feasible. Apply preventive fungicides at pink bud stage.",
+        "fertilizer": "Balanced NPK (10-10-10). Ensure adequate potassium for disease resistance. Foliar micronutrient sprays during growing season.",
+        "affectedParts": ["Leaves", "Fruit"],
+        "favorableConditions": "Warm spring rains (18-25°C). Cedar galls release spores during wet periods in April-June.",
+        "spreadMechanism": "Wind-borne basidiospores from cedar galls travel to apple trees. Aeciospores from apple travel back to cedar."
+      }
+    },
+    {
+      "index": 3,
+      "raw": "Apple___healthy",
+      "plant": "Apple",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The apple plant appears to be in excellent health with normal green leaf coloration, no spots, lesions, or discoloration visible.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and monitoring for early signs of disease.",
+        "prevention": "Maintain good agricultural practices: proper watering, balanced fertilization, crop rotation, and regular scouting. Prune annually for good air circulation.",
+        "fertilizer": "Standard balanced NPK (10-10-10) fertilizer once per month during growing season. Adjust based on soil test results. Apply compost in spring.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 4,
+      "raw": "Blueberry___healthy",
+      "plant": "Blueberry",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The blueberry plant appears healthy with vibrant green foliage and no visible signs of infection or stress.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care including proper irrigation and mulching.",
+        "prevention": "Maintain acidic soil pH (4.5-5.5). Use pine bark mulch. Ensure proper drainage. Scout regularly for early disease signs.",
+        "fertilizer": "Acidic fertilizer (ammonium sulfate) or specialized blueberry fertilizer. Avoid nitrate-based fertilizers. Apply sulfur if soil pH is too high.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 5,
+      "raw": "Cherry_(including_sour)___Powdery_mildew",
+      "plant": "Cherry",
+      "disease": "Powdery Mildew",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease causing white powdery coating on leaves, shoots, and sometimes fruit. Reduces photosynthesis and weakens the plant. Young leaves may curl and become distorted.",
+        "scientificName": "Podosphaera clandestina",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply sulfur-based fungicides or potassium bicarbonate sprays. Neem oil is effective for mild cases. Remove heavily infected plant parts promptly.",
+        "prevention": "Ensure good air circulation through proper spacing and pruning. Avoid overhead watering. Plant resistant varieties. Reduce nitrogen fertilization in late season.",
+        "fertilizer": "Balanced NPK with emphasis on potassium (K). Silicon-based supplements can strengthen plant defenses against fungal penetration.",
+        "affectedParts": ["Leaves", "Shoots", "Fruit"],
+        "favorableConditions": "Warm dry days (20-30°C) with cool humid nights. Unlike most fungi, powdery mildew thrives without free water on leaf surfaces.",
+        "spreadMechanism": "Wind-dispersed conidia (asexual spores). Overwinters as chasmothecia on fallen leaves."
+      }
+    },
+    {
+      "index": 6,
+      "raw": "Cherry_(including_sour)___healthy",
+      "plant": "Cherry",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The cherry plant appears healthy with normal leaf structure and coloration.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and monitoring.",
+        "prevention": "Maintain good pruning practices for air circulation. Water at the base. Scout for early disease signs during humid weather.",
+        "fertilizer": "Balanced NPK (10-10-10) in early spring. Avoid late-season nitrogen applications that promote soft growth.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 7,
+      "raw": "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot",
+      "plant": "Corn",
+      "disease": "Gray Leaf Spot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Cercospora zeae-maydis) causing rectangular lesions on corn leaves that are gray to tan, parallel to leaf veins. Can cause significant yield loss of 20-50% in severe cases.",
+        "scientificName": "Cercospora zeae-maydis",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply foliar fungicides containing Strobilurin (Azoxystrobin) or Triazole (Propiconazole) at first sign of symptoms. Time applications at VT to R1 growth stage for best results.",
+        "prevention": "Practice crop rotation with non-host crops (soybeans, small grains). Use resistant hybrids. Manage residue through tillage or decomposition. Avoid continuous corn cropping.",
+        "fertilizer": "Nitrogen-rich fertilizer (46-0-0 Urea) during vegetative stage. Balanced NPK at planting. Split nitrogen applications for optimal uptake.",
+        "affectedParts": ["Leaves", "Husks"],
+        "favorableConditions": "Warm humid conditions (22-30°C) with extended leaf wetness. Prolonged dew periods and high relative humidity (>90%).",
+        "spreadMechanism": "Wind-dispersed conidia from infected crop residue. Survives overwinter on corn debris on soil surface."
+      }
+    },
+    {
+      "index": 8,
+      "raw": "Corn_(maize)___Common_rust_",
+      "plant": "Corn",
+      "disease": "Common Rust",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Puccinia sorghi) producing cinnamon-brown circular to elongated pustules (uredinia) on both upper and lower leaf surfaces of corn. Pustules rupture to release powdery reddish-brown spores.",
+        "scientificName": "Puccinia sorghi",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply Triazole or Strobilurin fungicides when pustules first appear and disease pressure is moderate. Foliar applications before tasseling are most effective.",
+        "prevention": "Plant resistant hybrids with Rp genes. Early planting can help avoid peak spore production periods. Scout fields regularly from V8 to tasseling.",
+        "fertilizer": "Balanced NPK (20-10-10). Adequate potassium improves plant defense mechanisms. Avoid nitrogen deficiency which increases susceptibility.",
+        "affectedParts": ["Leaves", "Husks", "Stalks"],
+        "favorableConditions": "Cool to moderate temperatures (16-23°C) with high humidity. Night dew and frequent light rains.",
+        "spreadMechanism": "Wind-borne urediniospores can travel hundreds of miles. Does not overwinter in temperate regions; spores blow in from tropical areas."
+      }
+    },
+    {
+      "index": 9,
+      "raw": "Corn_(maize)___Northern_Leaf_Blight",
+      "plant": "Corn",
+      "disease": "Northern Leaf Blight",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Exserohilum turcicum) causing large, cigar-shaped grayish-green to tan lesions (2.5-15 cm) on corn leaves. Lesions start on lower leaves and progress upward. Can reduce yields by 30-50% in susceptible hybrids.",
+        "scientificName": "Exserohilum turcicum",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Propiconazole or Azoxystrobin fungicides. Application timing before or at tasseling (VT-R1) is critical for maximum efficacy.",
+        "prevention": "Use resistant hybrids with Ht genes. Practice crop rotation with non-host crops. Tillage to bury corn residue reduces primary inoculum.",
+        "fertilizer": "Nitrogen-rich fertilizer with balanced phosphorus and potassium. Split nitrogen applications for optimal plant health and disease tolerance.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Moderate temperatures (18-27°C) with heavy dews, fog, or light rains. High humidity for extended periods.",
+        "spreadMechanism": "Wind and rain-splashed conidia from infected crop residue. Overwinters in corn debris on soil surface."
+      }
+    },
+    {
+      "index": 10,
+      "raw": "Corn_(maize)___healthy",
+      "plant": "Corn",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The corn plant shows healthy green foliage with normal growth patterns and no visible lesions or discoloration.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Maintain proper irrigation and nutrient management.",
+        "prevention": "Rotate crops annually. Use certified disease-free seed. Scout fields regularly. Maintain balanced soil fertility.",
+        "fertilizer": "Nitrogen-rich fertilizer during vegetative growth (46-0-0 Urea). Apply starter fertilizer (10-34-0) at planting. Side-dress nitrogen at V6-V8.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 11,
+      "raw": "Grape___Black_rot",
+      "plant": "Grape",
+      "disease": "Black Rot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Guignardia bidwellii) causing small brown circular spots on leaves and black shriveled mummified berries. Leaf spots have dark margins with tan centers containing pycnidia.",
+        "scientificName": "Guignardia bidwellii",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Mancozeb or Captan from bloom through veraison at 10-14 day intervals. Remove infected clusters and mummified berries. Myclobutanil provides excellent curative action.",
+        "prevention": "Good canopy management for air circulation. Remove mummified fruit from vines and ground. Apply preventative fungicides beginning at early shoot growth.",
+        "fertilizer": "Balanced vineyard NPK with emphasis on potassium for fruit quality and vine health. Avoid excessive nitrogen that promotes dense canopy.",
+        "affectedParts": ["Leaves", "Berries", "Tendrils", "Shoots"],
+        "favorableConditions": "Warm wet weather (21-27°C) with at least 6 hours of leaf wetness. Spring rains during shoot growth period.",
+        "spreadMechanism": "Rain-splashed ascospores from overwintering mummified berries. Conidia from leaf lesions cause secondary infections."
+      }
+    },
+    {
+      "index": 12,
+      "raw": "Grape___Esca_(Black_Measles)",
+      "plant": "Grape",
+      "disease": "Esca (Black Measles)",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Chronic fungal disease complex in grapes causing distinctive tiger-striped leaves (interveinal chlorosis and necrosis) and dark spots/bleeding on berries. Can kill vines over several years. The trunk shows sectored necrosis when cut.",
+        "scientificName": "Phaeomoniella chlamydospora / Phaeoacremonium spp.",
+        "type": "Fungal",
+        "severity": "Very High",
+        "cure": "No cure exists once the vine is infected. Apply wound protectants (Topsin-M paste) after pruning. Trunk renewal or vine surgery (curettage) may extend vine life.",
+        "prevention": "Protect pruning wounds with sealant immediately after cutting. Minimize large pruning cuts. Prune during dry weather. Remove and burn severely affected vines.",
+        "fertilizer": "Balanced NPK (10-10-10). Avoid excessive nitrogen. Ensure adequate calcium and magnesium for vine health. Foliar nutrition may help manage symptoms.",
+        "affectedParts": ["Leaves", "Berries", "Trunk", "Cordons"],
+        "favorableConditions": "Warm dry summers trigger symptom expression. Pruning wounds provide entry points for the fungi during wet weather.",
+        "spreadMechanism": "Airborne spores infect pruning wounds. Fungi colonize wood vascular tissue slowly over years."
+      }
+    },
+    {
+      "index": 13,
+      "raw": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "plant": "Grape",
+      "disease": "Leaf Blight (Isariopsis Leaf Spot)",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease causing brown necrotic spots with yellow halos on grape leaves. Spots may coalesce leading to large dead areas. Can cause premature defoliation affecting vine vigor and fruit quality.",
+        "scientificName": "Pseudocercospora vitis",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply Mancozeb or copper-based fungicides at 10-14 day intervals. Remove and destroy infected leaves to reduce inoculum load.",
+        "prevention": "Maintain good canopy management for air flow. Avoid overhead irrigation. Apply preventative fungicides before bloom. Ensure adequate vine spacing.",
+        "fertilizer": "Balanced vineyard fertilizer with emphasis on potassium for fruit quality and disease resistance. Magnesium supplements if deficient.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Warm wet weather with extended leaf wetness periods. Overcrowded canopies with poor air circulation.",
+        "spreadMechanism": "Wind and rain-dispersed spores. Overwinters in infected leaf debris on the ground."
+      }
+    },
+    {
+      "index": 14,
+      "raw": "Grape___healthy",
+      "plant": "Grape",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The grapevine appears healthy with normal leaf color, structure, and growth pattern.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular vineyard management.",
+        "prevention": "Practice good canopy management. Monitor for pests and diseases. Maintain proper irrigation and nutrition.",
+        "fertilizer": "Balanced vineyard NPK. Apply potassium for fruit quality. Foliar micronutrients (Zn, B, Mn) during growing season.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 15,
+      "raw": "Orange___Haunglongbing_(Citrus_greening)",
+      "plant": "Orange",
+      "disease": "Huanglongbing (Citrus Greening)",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Devastating bacterial disease (Candidatus Liberibacter asiaticus) spread by Asian citrus psyllid (Diaphorina citri). Causes asymmetric yellowing/blotchy mottle of leaves, misshapen lopsided bitter fruit with aborted seeds, and eventual tree death.",
+        "scientificName": "Candidatus Liberibacter asiaticus",
+        "type": "Bacterial",
+        "severity": "Critical",
+        "cure": "No cure available. Remove infected trees promptly to prevent spread. Control psyllid vector with systemic insecticides (Imidacloprid, Thiamethoxam). Thermotherapy research is ongoing.",
+        "prevention": "Use certified disease-free nursery stock from enclosed structures. Implement area-wide coordinated psyllid control programs. Regular scouting for psyllid populations and HLB symptoms.",
+        "fertilizer": "Enhanced nutrition program with micronutrients (zinc, manganese, iron, boron) to maintain infected tree health and productivity. Foliar applications every 2-3 months recommended.",
+        "affectedParts": ["Leaves", "Fruit", "Roots", "Entire tree"],
+        "favorableConditions": "Warm subtropical/tropical climates where Asian citrus psyllid thrives. Year-round activity in frost-free regions.",
+        "spreadMechanism": "Transmitted by Asian citrus psyllid (Diaphorina citri) feeding. Also spread through grafting with infected budwood."
+      }
+    },
+    {
+      "index": 16,
+      "raw": "Peach___Bacterial_spot",
+      "plant": "Peach",
+      "disease": "Bacterial Spot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas arboricola pv. pruni) causing small dark angular spots on leaves, water-soaked lesions on fruit, and twig cankers. Severe infections cause premature defoliation and fruit cracking.",
+        "scientificName": "Xanthomonas arboricola pv. pruni",
+        "type": "Bacterial",
+        "severity": "Moderate to High",
+        "cure": "Apply copper-based bactericides combined with Mancozeb every 7-10 days during wet periods. Oxytetracycline sprays during bloom. Avoid working in wet orchards.",
+        "prevention": "Use certified disease-free transplants. Plant resistant varieties. Maintain good air circulation through proper pruning. Windbreaks reduce wind-driven rain injury.",
+        "fertilizer": "Balanced NPK with calcium supplements. Calcium strengthens cell walls against bacterial invasion. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Fruit", "Twigs"],
+        "favorableConditions": "Warm humid weather (25-30°C) with driving rain and wind. Sandy soils increase susceptibility due to sand abrasion on leaves.",
+        "spreadMechanism": "Rain-splashed bacteria from cankers and leaf lesions. Wind-driven rain spreads bacteria to new tissue."
+      }
+    },
+    {
+      "index": 17,
+      "raw": "Peach___healthy",
+      "plant": "Peach",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The peach tree appears healthy with normal foliage and growth.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and monitoring.",
+        "prevention": "Proper pruning for air circulation. Scout for early disease symptoms. Maintain adequate soil drainage.",
+        "fertilizer": "Balanced NPK (10-10-10) in early spring. Calcium supplements for fruit quality. Adjust based on leaf tissue analysis.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 18,
+      "raw": "Pepper,_bell___Bacterial_spot",
+      "plant": "Bell Pepper",
+      "disease": "Bacterial Spot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas euvesicatoria) causing small dark raised spots on leaves with yellow halos, and raised scab-like lesions on fruit. Causes defoliation and sunscald on exposed fruit.",
+        "scientificName": "Xanthomonas euvesicatoria",
+        "type": "Bacterial",
+        "severity": "Moderate to High",
+        "cure": "Apply copper-based bactericides combined with Mancozeb every 5-7 days. Remove severely infected plant material. Avoid working in wet fields.",
+        "prevention": "Use certified disease-free seeds and transplants. Practice crop rotation with non-solanaceous crops. Avoid overhead irrigation. Sanitize tools.",
+        "fertilizer": "Balanced NPK with calcium supplements. Calcium strengthens cell walls against bacterial invasion. Moderate nitrogen application.",
+        "affectedParts": ["Leaves", "Fruit", "Stems"],
+        "favorableConditions": "Warm humid weather (24-30°C) with frequent rain. Overhead irrigation promotes spread.",
+        "spreadMechanism": "Seed-borne. Rain splash and wind-driven rain spread bacteria. Contaminated tools and workers."
+      }
+    },
+    {
+      "index": 19,
+      "raw": "Pepper,_bell___healthy",
+      "plant": "Bell Pepper",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The bell pepper plant appears healthy with normal leaf structure and color.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue standard care practices.",
+        "prevention": "Rotate crops every 2-3 years. Use drip irrigation. Scout regularly for pests and diseases. Maintain proper plant spacing.",
+        "fertilizer": "Balanced NPK (10-10-10). Side-dress with nitrogen at flowering. Calcium supplements to prevent blossom end rot.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 20,
+      "raw": "Potato___Early_blight",
+      "plant": "Potato",
+      "disease": "Early Blight",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Alternaria solani) causing dark concentric ring (target-like or bullseye) lesions on lower/older leaves, progressing upward. Tubers may develop dark sunken lesions. Common in tomatoes and potatoes.",
+        "scientificName": "Alternaria solani",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Chlorothalonil, Mancozeb, or copper fungicides every 7-10 days during humid weather. Remove infected lower leaves. Apply mulch to prevent soil splash onto lower foliage.",
+        "prevention": "Rotate crops on a 2-3 year cycle with non-solanaceous crops. Stake or cage plants for better air circulation. Water at the base, not overhead. Use certified disease-free seed potatoes.",
+        "fertilizer": "Balanced NPK (10-10-10) with extra potassium. Avoid excessive nitrogen which promotes lush growth susceptible to disease. Adequate phosphorus for strong root development.",
+        "affectedParts": ["Leaves", "Stems", "Tubers"],
+        "favorableConditions": "Warm temperatures (24-29°C) with alternating wet and dry periods. Stressed plants (nutrient deficiency, drought) are more susceptible.",
+        "spreadMechanism": "Wind-dispersed conidia from infected plant debris. Overwinters in infected plant residue and volunteer plants."
+      }
+    },
+    {
+      "index": 21,
+      "raw": "Potato___Late_blight",
+      "plant": "Potato",
+      "disease": "Late Blight",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Highly destructive oomycete disease (Phytophthora infestans) causing water-soaked dark lesions with white fuzzy sporangia on undersides of leaves. Can destroy entire fields in days. Historically caused the Irish Potato Famine.",
+        "scientificName": "Phytophthora infestans",
+        "type": "Oomycete",
+        "severity": "Critical",
+        "cure": "Apply Mancozeb, Chlorothalonil, or systemic fungicides (Metalaxyl/Ridomil Gold) immediately upon detection. Destroy infected plants immediately — do NOT compost them. Harvest tubers in dry conditions.",
+        "prevention": "Use certified seed potatoes and resistant varieties. Avoid overhead irrigation. Monitor weather forecasts for blight-favorable conditions (cool, wet). Destroy volunteer plants and cull piles.",
+        "fertilizer": "Phosphorus and potassium-rich fertilizer (0-20-20). Adequate calcium. Avoid excessive nitrogen which promotes dense foliage trapping humidity.",
+        "affectedParts": ["Leaves", "Stems", "Tubers"],
+        "favorableConditions": "Cool nights (10-15°C) and warm days (15-25°C) with high humidity (>90%) and rainfall. Extended leaf wetness periods.",
+        "spreadMechanism": "Wind-dispersed sporangia can travel 10+ km. Rain washes spores into soil to infect tubers. Extremely rapid epidemic development."
+      }
+    },
+    {
+      "index": 22,
+      "raw": "Potato___healthy",
+      "plant": "Potato",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The potato plant appears healthy with normal green foliage and growth.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and hilling.",
+        "prevention": "Use certified seed potatoes. Rotate crops. Hill soil around stems. Scout regularly during wet weather.",
+        "fertilizer": "Balanced NPK at planting. Side-dress nitrogen at hilling. Potassium for tuber quality. Avoid fresh manure.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 23,
+      "raw": "Raspberry___healthy",
+      "plant": "Raspberry",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The raspberry plant shows healthy canes and foliage.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular cane management and pruning.",
+        "prevention": "Remove spent floricanes after harvest. Maintain proper cane spacing. Use trellis systems for air circulation. Scout for pests.",
+        "fertilizer": "Balanced NPK (10-10-10) in early spring. Avoid excessive nitrogen. Maintain slightly acidic soil pH (5.5-6.5).",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 24,
+      "raw": "Soybean___healthy",
+      "plant": "Soybean",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The soybean plant appears healthy with normal trifoliate leaves and growth.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue standard agronomic practices.",
+        "prevention": "Rotate with corn or small grains. Use treated seed. Scout regularly. Maintain proper row spacing.",
+        "fertilizer": "Inoculate with Bradyrhizobium for nitrogen fixation. Apply phosphorus and potassium based on soil tests. Minimal nitrogen needed due to fixation.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 25,
+      "raw": "Squash___Powdery_mildew",
+      "plant": "Squash",
+      "disease": "Powdery Mildew",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease causing white powdery spots on upper and lower leaf surfaces of squash, expanding to cover entire leaves. Reduces photosynthesis, yield, and fruit quality. Leaves become yellow and die prematurely.",
+        "scientificName": "Podosphaera xanthii / Erysiphe cichoracearum",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply potassium bicarbonate, sulfur sprays, or systemic fungicides (Myclobutanil). Remove heavily infected leaves. Neem oil can slow mild infections.",
+        "prevention": "Plant resistant varieties. Ensure good air circulation through proper spacing. Avoid wetting leaves during irrigation. Avoid excessive nitrogen.",
+        "fertilizer": "Balanced NPK with potassium emphasis. Silicon-based supplements help strengthen cell wall resistance to fungal penetration.",
+        "affectedParts": ["Leaves", "Stems", "Petioles"],
+        "favorableConditions": "Warm dry days (20-27°C) with cool humid nights. Crowded plantings with poor air circulation.",
+        "spreadMechanism": "Wind-dispersed conidia. Does not require free water for infection — high humidity is sufficient."
+      }
+    },
+    {
+      "index": 26,
+      "raw": "Strawberry___Leaf_scorch",
+      "plant": "Strawberry",
+      "disease": "Leaf Scorch",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Diplocarpon earlianum) causing dark purple to reddish-brown irregular spots on strawberry leaves that enlarge, coalesce, and cause extensive leaf browning and drying resembling scorched appearance.",
+        "scientificName": "Diplocarpon earlianum",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply fungicides containing Captan or Myclobutanil after harvest. Mow and remove old foliage after final harvest. Thin plants for improved air circulation.",
+        "prevention": "Use certified disease-free plants from reputable nurseries. Maintain proper plant spacing (30-45 cm). Avoid overhead irrigation. Remove runners to reduce crowding.",
+        "fertilizer": "Balanced NPK (10-10-10) applied in early spring before bloom. Avoid excessive nitrogen late in the season that promotes dense foliage.",
+        "affectedParts": ["Leaves", "Petioles", "Runners"],
+        "favorableConditions": "Warm humid weather (20-25°C) with frequent rain or overhead irrigation. Crowded plantings.",
+        "spreadMechanism": "Rain-splashed conidia from infected leaves. Overwinters in infected plant debris."
+      }
+    },
+    {
+      "index": 27,
+      "raw": "Strawberry___healthy",
+      "plant": "Strawberry",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The strawberry plant shows healthy green foliage and normal growth.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and runner management.",
+        "prevention": "Use certified disease-free plants. Maintain proper spacing. Use plastic or straw mulch. Rotate beds every 3-4 years.",
+        "fertilizer": "Balanced NPK (10-10-10) in early spring. Avoid excessive nitrogen during fruiting. Maintain soil pH 6.0-6.5.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    },
+    {
+      "index": 28,
+      "raw": "Tomato___Bacterial_spot",
+      "plant": "Tomato",
+      "disease": "Bacterial Spot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas spp.) causing small dark raised spots on leaves, stems, and fruit. Leaf lesions may have yellow halos. Fruit spots are raised, scab-like, and reduce marketability.",
+        "scientificName": "Xanthomonas vesicatoria / X. euvesicatoria",
+        "type": "Bacterial",
+        "severity": "Moderate to High",
+        "cure": "Apply copper hydroxide + Mancozeb every 5-7 days during wet weather. Remove severely infected plant material. Avoid working in wet fields to prevent mechanical spread.",
+        "prevention": "Use certified disease-free seeds and transplants. Practice 2-3 year crop rotation with non-solanaceous crops. Avoid overhead irrigation. Use drip irrigation.",
+        "fertilizer": "Balanced NPK with calcium supplements. Calcium strengthens cell walls against bacterial invasion. Moderate nitrogen to avoid excessive foliage.",
+        "affectedParts": ["Leaves", "Fruit", "Stems"],
+        "favorableConditions": "Warm humid weather (24-30°C) with frequent rain or overhead irrigation. Wind-driven rain facilitates spread.",
+        "spreadMechanism": "Seed-borne bacteria. Rain splash and wind-driven rain. Contaminated tools, workers, and stakes."
+      }
+    },
+    {
+      "index": 29,
+      "raw": "Tomato___Early_blight",
+      "plant": "Tomato",
+      "disease": "Early Blight",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Alternaria solani) causing concentric dark ring target-like (bullseye) spots with yellow halos on older/lower leaves. Progresses upward. Can also affect stems and fruit, causing sunken dark lesions.",
+        "scientificName": "Alternaria solani",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Remove infected lower leaves immediately. Apply mulch to prevent soil splash. Spray Chlorothalonil, Mancozeb, or copper-based fungicides every 7-10 days.",
+        "prevention": "Stake plants for better airflow. Mulch with straw or plastic to prevent soil splash. Water at the base using drip irrigation. Rotate crops on 2-3 year cycle.",
+        "fertilizer": "Balanced NPK (10-10-10) with extra potassium. Calcium supplements for cell wall strength. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Stems", "Fruit"],
+        "favorableConditions": "Warm temperatures (24-29°C) with alternating wet and dry periods. Stressed, nutrient-deficient plants are more susceptible.",
+        "spreadMechanism": "Wind-dispersed conidia. Rain splash from soil. Overwinters in infected plant debris and soil."
+      }
+    },
+    {
+      "index": 30,
+      "raw": "Tomato___Late_blight",
+      "plant": "Tomato",
+      "disease": "Late Blight",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Highly destructive oomycete disease (Phytophthora infestans) causing grey-green water-soaked spots that rapidly enlarge to dark brown/black areas with white fuzzy sporangia on undersides. Can destroy entire plantings within a week.",
+        "scientificName": "Phytophthora infestans",
+        "type": "Oomycete",
+        "severity": "Critical",
+        "cure": "Destroy infected plants immediately — do NOT compost. Apply Mancozeb, Chlorothalonil, or copper-based fungicides weekly to remaining plants. Harvest fruit before infection spreads.",
+        "prevention": "Keep leaves dry using drip irrigation. Use resistant cultivars (Legend, Defiant, Iron Lady). Avoid overhead irrigation. Monitor weather forecasts for blight-favorable conditions.",
+        "fertilizer": "Phosphorus and potassium-rich fertilizer. Avoid excess nitrogen that promotes dense, humid canopy. Calcium for cell wall strength.",
+        "affectedParts": ["Leaves", "Stems", "Fruit"],
+        "favorableConditions": "Cool nights (10-15°C), warm days (15-22°C), high humidity (>90%), and prolonged leaf wetness.",
+        "spreadMechanism": "Wind-dispersed sporangia can travel many kilometers. Extremely rapid epidemic development under favorable conditions."
+      }
+    },
+    {
+      "index": 31,
+      "raw": "Tomato___Leaf_Mold",
+      "plant": "Tomato",
+      "disease": "Leaf Mold",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Passalora fulva / Fulvia fulva) causing pale yellow diffuse spots on upper leaf surfaces and olive-green to brown velvety mold on corresponding undersides. Especially common in greenhouse and high-tunnel tomatoes.",
+        "scientificName": "Passalora fulva",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply fungicides containing Chlorothalonil or copper. Improve greenhouse ventilation immediately. Remove infected leaves and lower foliage to improve air flow.",
+        "prevention": "Maintain relative humidity below 85% in greenhouses. Ensure adequate plant spacing and ventilation. Use resistant varieties (Cf gene resistance). Avoid leaf wetness.",
+        "fertilizer": "Balanced NPK. Calcium supplements to strengthen plant tissues. Avoid excessive nitrogen that promotes dense foliage.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "High humidity (>85%) with temperatures of 20-25°C. Poor ventilation in greenhouses and high tunnels.",
+        "spreadMechanism": "Airborne conidia. Spores can survive on greenhouse surfaces for extended periods."
+      }
+    },
+    {
+      "index": 32,
+      "raw": "Tomato___Septoria_leaf_spot",
+      "plant": "Tomato",
+      "disease": "Septoria Leaf Spot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Septoria lycopersici) causing numerous small (2-5mm) circular spots with gray/white centers and dark brown borders on tomato leaves. Tiny black pycnidia visible in spot centers. Begins on lower leaves.",
+        "scientificName": "Septoria lycopersici",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Chlorothalonil or copper-based fungicides at first sign of infection. Remove infected lower leaves promptly. Mulch to prevent soil splash.",
+        "prevention": "Practice 3-year crop rotation. Remove all plant debris after harvest. Water at plant base using drip irrigation. Use disease-free transplants.",
+        "fertilizer": "Balanced NPK (10-10-10). Adequate potassium for disease resistance. Calcium supplements for stronger plant tissues.",
+        "affectedParts": ["Leaves", "Stems", "Petioles"],
+        "favorableConditions": "Warm humid weather (20-25°C) with frequent rainfall or prolonged leaf wetness. Crowded plantings.",
+        "spreadMechanism": "Rain-splashed conidia from pycnidia. Overwinters in infected plant debris. Seed transmission possible."
+      }
+    },
+    {
+      "index": 33,
+      "raw": "Tomato___Spider_mites_Two-spotted_spider_mite",
+      "plant": "Tomato",
+      "disease": "Spider Mites (Two-Spotted)",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Tiny arachnid pest (Tetranychus urticae) causing stippled yellowing (tiny pale dots) of leaves from sap feeding, fine silken webbing on undersides, and eventual leaf drop. Thrives in hot dry conditions and can build huge populations rapidly.",
+        "scientificName": "Tetranychus urticae",
+        "type": "Pest/Arachnid",
+        "severity": "Moderate to High",
+        "cure": "Apply miticides (Abamectin, Bifenthrin, or Spiromesifen). Insecticidal soap or horticultural oil for organic control. Release predatory mites (Phytoseiulus persimilis) for biological control.",
+        "prevention": "Maintain adequate irrigation to avoid water stress. Avoid broad-spectrum insecticides that kill natural predators. Monitor undersides of leaves regularly. Overhead misting can discourage mites.",
+        "fertilizer": "Balanced NPK with adequate irrigation. Over-fertilized plants (excess nitrogen) attract more mites by increasing leaf nitrogen content.",
+        "affectedParts": ["Leaves", "Stems"],
+        "favorableConditions": "Hot dry weather (>27°C, <50% humidity). Dusty conditions. Water-stressed plants.",
+        "spreadMechanism": "Wind dispersal (ballooning on silk threads). Movement on tools, clothing, and infested transplants."
+      }
+    },
+    {
+      "index": 34,
+      "raw": "Tomato___Target_Spot",
+      "plant": "Tomato",
+      "disease": "Target Spot",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Fungal disease (Corynespora cassiicola) causing brown target-like lesions with concentric rings on leaves. Lesions start small and expand. Can cause severe defoliation and fruit lesions in humid conditions.",
+        "scientificName": "Corynespora cassiicola",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply fungicides containing Chlorothalonil, Azoxystrobin, or Difenoconazole at 7-14 day intervals. Remove heavily infected foliage.",
+        "prevention": "Rotate crops with non-solanaceous species. Improve air circulation through proper spacing, staking, and pruning. Avoid overhead irrigation.",
+        "fertilizer": "Balanced NPK with potassium emphasis for enhanced disease resistance.",
+        "affectedParts": ["Leaves", "Stems", "Fruit"],
+        "favorableConditions": "Warm humid conditions (25-30°C) with extended leaf wetness. Greenhouses and high tunnels with poor ventilation.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Overwinters in crop debris and alternate hosts."
+      }
+    },
+    {
+      "index": 35,
+      "raw": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "plant": "Tomato",
+      "disease": "Yellow Leaf Curl Virus",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Viral disease (TYLCV, Begomovirus) transmitted by whiteflies (Bemisia tabaci). Causes severe upward leaf curling and cupping, yellowing of leaf margins, stunted bushy growth, flower drop, and drastically reduced fruit set.",
+        "scientificName": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+        "type": "Viral",
+        "severity": "Very High",
+        "cure": "No cure for the virus. Remove and destroy infected plants immediately. Control whitefly population with systemic insecticides (Imidacloprid, Cyantraniliprole), neem oil, or yellow sticky traps.",
+        "prevention": "Use TYLCV-resistant varieties (Ty-1, Ty-2, Ty-3 gene resistance). Install fine-mesh (50-mesh) insect-proof nets. Use reflective silver mulch to repel whiteflies. Plant away from infected fields.",
+        "fertilizer": "Balanced NPK (10-10-10). Micronutrient supplements (zinc, iron, boron) to support remaining healthy plants and maintain vigor.",
+        "affectedParts": ["Leaves", "Flowers", "Entire plant"],
+        "favorableConditions": "Warm weather (25-35°C) favoring whitefly populations. Dry seasons with low rainfall.",
+        "spreadMechanism": "Persistently transmitted by whitefly (Bemisia tabaci). Whiteflies remain viruliferous for life after acquisition feeding."
+      }
+    },
+    {
+      "index": 36,
+      "raw": "Tomato___Tomato_mosaic_virus",
+      "plant": "Tomato",
+      "disease": "Mosaic Virus",
+      "isHealthy": false,
+      "knowledge": {
+        "description": "Viral disease (ToMV/TMV) causing distinctive mottled light and dark green mosaic patterns on leaves, leaf distortion, fernleaf symptoms, and reduced fruit quality with internal browning. Extremely stable and persistent virus.",
+        "scientificName": "Tomato Mosaic Virus (ToMV) / Tobacco Mosaic Virus (TMV)",
+        "type": "Viral",
+        "severity": "High",
+        "cure": "No cure available. Remove and destroy infected plants immediately. Disinfect all tools with 10% bleach or 20% skim milk solution between plants.",
+        "prevention": "Use TMV-resistant varieties (Tm-2, Tm-2² gene resistance). Wash hands thoroughly before handling plants. Avoid tobacco products near plants (TMV persists in cured tobacco). Disinfect greenhouse surfaces.",
+        "fertilizer": "Balanced NPK with micronutrients. Maintain optimal plant nutrition to reduce symptom severity and maintain some productivity.",
+        "affectedParts": ["Leaves", "Fruit", "Entire plant"],
+        "favorableConditions": "Virus is extremely stable and can remain infectious in dried plant debris for years. Any temperature is suitable.",
+        "spreadMechanism": "Mechanical transmission through touch, tools, and contaminated hands. Seed-borne in some hosts. NOT insect transmitted."
+      }
+    },
+    {
+      "index": 37,
+      "raw": "Tomato___healthy",
+      "plant": "Tomato",
+      "disease": "Healthy",
+      "isHealthy": true,
+      "knowledge": {
+        "description": "No disease detected. The tomato plant appears to be in excellent health with normal green foliage, no spots, lesions, or viral symptoms visible.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and monitoring.",
+        "prevention": "Maintain good agricultural practices: proper staking, drip irrigation, crop rotation, and regular scouting for early signs of disease.",
+        "fertilizer": "Balanced NPK (10-10-10) at planting. Side-dress nitrogen at first fruit set. Calcium for blossom end rot prevention. Adjust based on soil tests.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    }
+  ],
+  "extendedDiseases": {
+    "Rice Bacterial Blight": {
+      "plants": ["Rice", "Paddy"],
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas oryzae pv. oryzae) causing water-soaked to yellowish stripe lesions on rice leaves starting from leaf tips and margins. Severe infections cause entire leaves to turn white and die. Known as 'kresek' when seedlings wilt.",
+        "scientificName": "Xanthomonas oryzae pv. oryzae",
+        "type": "Bacterial",
+        "severity": "High",
+        "cure": "Apply Copper oxychloride (0.25%) or Streptomycin sulphate (500 ppm). Drain flooded fields to reduce humidity. Remove severely infected plants.",
+        "prevention": "Use certified disease-free seeds. Balanced nitrogen application — excessive N increases susceptibility. Plant resistant varieties (Xa21, xa13 genes). Avoid field-to-field water flow.",
+        "fertilizer": "Balanced N-P-K. Avoid excessive nitrogen which dramatically increases susceptibility. Potassium improves disease tolerance.",
+        "affectedParts": ["Leaves", "Sheaths", "Panicles"],
+        "favorableConditions": "Warm humid conditions (25-34°C) with high rainfall and strong winds. Flood-irrigated fields with high nitrogen.",
+        "spreadMechanism": "Wind-driven rain. Contaminated irrigation water. Infected seed. Bacterial ooze from lesions."
+      }
+    },
+    "Rice Blast": {
+      "plants": ["Rice", "Paddy"],
+      "knowledge": {
+        "description": "Most destructive rice fungal disease (Magnaporthe oryzae) causing distinctive diamond/spindle-shaped spots with gray centers and brown to reddish-brown borders on leaves. Can also infect nodes, panicle neck (neck blast), and cause complete grain loss.",
+        "scientificName": "Magnaporthe oryzae",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "Apply Tricyclazole (0.06%), Isoprothiolane (0.1%), or Carbendazim at first sign of symptoms. Drain fields briefly and re-flood. Two applications may be needed 10-15 days apart.",
+        "prevention": "Use blast-resistant varieties (Pi gene series). Avoid excessive nitrogen application. Proper water management — intermittent irrigation reduces blast. Treat seeds with Tricyclazole.",
+        "fertilizer": "Split nitrogen applications (3-4 splits instead of 2). Adequate silica (silicon fertilizer at 200 kg/ha) dramatically reduces blast incidence. Potassium for plant vigor.",
+        "affectedParts": ["Leaves", "Nodes", "Panicle neck", "Grains"],
+        "favorableConditions": "Cool nights (17-22°C), warm days, prolonged dew/leaf wetness (>10 hours). Cloudy weather with low light intensity.",
+        "spreadMechanism": "Wind-dispersed conidia produced abundantly on lesions. Can travel several kilometers. Seed-borne transmission."
+      }
+    },
+    "Rice Brown Spot": {
+      "plants": ["Rice", "Paddy"],
+      "knowledge": {
+        "description": "Fungal disease (Cochliobolus miyabeanus / Bipolaris oryzae) causing circular to oval brown spots with gray centers and brown margins on leaves and grains. Grain infection causes discoloration and reduced quality. Historically caused the Bengal Famine of 1943.",
+        "scientificName": "Bipolaris oryzae",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Propiconazole (0.1%), Mancozeb (0.25%), or Carbendazim at flag leaf stage. Treat seeds with Thiram or Carbendazim before planting.",
+        "prevention": "Use balanced fertilizers, especially potassium and silicon. Avoid nitrogen deficiency which increases susceptibility. Seed treatment before sowing.",
+        "fertilizer": "Potassium and silicon-rich fertilizer. Avoid nitrogen deficiency which increases susceptibility. Apply 100 kg/ha MOP and silicon-based amendments.",
+        "affectedParts": ["Leaves", "Leaf sheaths", "Grains"],
+        "favorableConditions": "Nutrient-deficient soils, particularly potassium and silicon deficiency. Temperature 25-30°C with high humidity.",
+        "spreadMechanism": "Wind-dispersed conidia. Seed-borne — infected seeds carry the pathogen to new fields."
+      }
+    },
+    "Rice Leaf Smut": {
+      "plants": ["Rice", "Paddy"],
+      "knowledge": {
+        "description": "Fungal disease (Entyloma oryzae) causing angular dark-gray to black spots with powdery smutty mass on rice leaves. Spots are small, slightly raised, and contain dark teliospores.",
+        "scientificName": "Entyloma oryzae",
+        "type": "Fungal",
+        "severity": "Low to Moderate",
+        "cure": "Apply Carbendazim (0.1%) or Mancozeb (0.25%). Remove heavily infected plant material from the field.",
+        "prevention": "Use disease-free seed. Treat seeds with Thiram or Carbendazim before sowing. Maintain field hygiene.",
+        "fertilizer": "Balanced NPK. Ensure adequate potassium and phosphorus for plant health and disease resistance.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "High humidity and warm temperatures (25-30°C). Poorly drained fields.",
+        "spreadMechanism": "Wind-dispersed teliospores. Seed-borne transmission."
+      }
+    },
+    "Rice Sheath Blight": {
+      "plants": ["Rice", "Paddy"],
+      "knowledge": {
+        "description": "Fungal disease (Rhizoctonia solani) causing irregular greenish-gray water-soaked lesions on leaf sheaths near the waterline. Lesions expand and coalesce, forming banded patterns. Can cause lodging in severe cases.",
+        "scientificName": "Rhizoctonia solani AG-1 IA",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Hexaconazole (0.1%), Propiconazole, or Validamycin at boot leaf stage. Drain excess water from fields.",
+        "prevention": "Avoid excessive nitrogen and dense planting. Maintain proper water management. Remove sclerotia from field surface before transplanting.",
+        "fertilizer": "Balanced NPK — avoid excessive nitrogen. Potassium at 60-80 kg/ha improves resistance. Silicon amendments help.",
+        "affectedParts": ["Leaf sheaths", "Leaves", "Panicles"],
+        "favorableConditions": "High temperature (28-32°C), high humidity, dense planting, and excessive nitrogen application.",
+        "spreadMechanism": "Sclerotia float on irrigation water. Contact spread between adjacent plants and tillers."
+      }
+    },
+    "Rice Tungro Virus": {
+      "plants": ["Rice", "Paddy"],
+      "knowledge": {
+        "description": "Viral disease complex caused by Rice tungro bacilliform virus (RTBV) and Rice tungro spherical virus (RTSV). Causes stunted growth, yellow to orange leaf discoloration, reduced tillering, and poor grain filling.",
+        "scientificName": "RTBV + RTSV complex",
+        "type": "Viral",
+        "severity": "High",
+        "cure": "No cure. Remove and destroy infected plants. Control green leafhopper vector (Nephotettix virescens) with Imidacloprid or Carbofuran.",
+        "prevention": "Plant tungro-resistant varieties. Synchronous planting in community. Early planting to avoid peak leafhopper populations.",
+        "fertilizer": "Balanced NPK. Avoid excessive nitrogen that attracts leafhoppers.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Warm humid conditions with high green leafhopper populations. Staggered planting dates in area.",
+        "spreadMechanism": "Transmitted by green leafhopper (Nephotettix virescens) in a semi-persistent manner."
+      }
+    },
+    "Cotton Bacterial Blight": {
+      "plants": ["Cotton"],
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas citri pv. malvacearum) causing angular water-soaked spots on cotton leaves that become brown and necrotic. Boll rot and black arm on stems also occur in severe cases.",
+        "scientificName": "Xanthomonas citri pv. malvacearum",
+        "type": "Bacterial",
+        "severity": "Moderate to High",
+        "cure": "Apply copper-based bactericides (Copper oxychloride 0.25%) at disease onset. Remove and destroy infected plant debris from fields.",
+        "prevention": "Use certified disease-free and acid-delinted seed. Treat seed with Streptomycin + Carboxin. Crop rotation for 2-3 years. Plant resistant varieties.",
+        "fertilizer": "Balanced NPK. Adequate potassium (60-80 kg K₂O/ha) reduces susceptibility to bacterial diseases.",
+        "affectedParts": ["Leaves", "Bolls", "Stems"],
+        "favorableConditions": "Warm humid weather (25-35°C) with frequent rain. Wind-driven rain causes rapid spread.",
+        "spreadMechanism": "Seed-borne bacteria. Rain splash and wind-driven rain. Contaminated equipment."
+      }
+    },
+    "Cotton Curl Virus": {
+      "plants": ["Cotton"],
+      "knowledge": {
+        "description": "Viral disease (Cotton Leaf Curl Virus — CLCuV, Begomovirus) transmitted by whitefly (Bemisia tabaci) causing upward or downward leaf curling, thickened darkened veins (vein enation), stunted growth, and severe yield reduction.",
+        "scientificName": "Cotton Leaf Curl Virus (CLCuV)",
+        "type": "Viral",
+        "severity": "Very High",
+        "cure": "No cure. Remove (rogue out) infected plants early to reduce virus source. Apply systemic insecticides (Imidacloprid, Thiamethoxam) to control whitefly vector.",
+        "prevention": "Plant virus-tolerant varieties (CLCuV-resistant Bt cotton). Early planting (avoid late sowing). Mineral oil sprays deter whiteflies. Neem seed kernel extract.",
+        "fertilizer": "Balanced NPK with micronutrients to support remaining healthy plants. Zinc and iron supplements.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Warm dry weather (30-40°C) with high whitefly populations. Late-sown crops most affected.",
+        "spreadMechanism": "Persistently transmitted by whitefly (Bemisia tabaci). Whitefly remains viruliferous for its lifetime."
+      }
+    },
+    "Cotton Fusarium Wilt": {
+      "plants": ["Cotton"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Fusarium oxysporum f. sp. vasinfectum) causing yellowing and wilting of leaves (often one-sided initially), vascular browning visible when stems are cut, and eventual plant death.",
+        "scientificName": "Fusarium oxysporum f. sp. vasinfectum",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "No cure once infected. Remove and destroy infected plants. Soil solarization during summer. Apply Trichoderma viride as biocontrol at 2.5 kg/ha in soil.",
+        "prevention": "Use Fusarium-resistant varieties. Crop rotation avoiding cotton for 3+ consecutive years. Maintain soil pH 6.0-6.5. Avoid nematode buildup which predisposes plants to wilt.",
+        "fertilizer": "Potassium-rich fertilizer (80-100 kg K₂O/ha). Avoid excessive nitrogen. Maintain soil pH 6.0-6.5. Lime acidic soils.",
+        "affectedParts": ["Roots", "Stems (vascular tissue)", "Leaves"],
+        "favorableConditions": "Soil temperature 20-28°C. Acidic sandy soils. Root-knot nematode infestation increases wilt severity.",
+        "spreadMechanism": "Soilborne chlamydospores survive in soil for years. Spread through contaminated soil, water, and equipment."
+      }
+    },
+    "Cotton Alternaria Leaf Spot": {
+      "plants": ["Cotton"],
+      "knowledge": {
+        "description": "Fungal disease (Alternaria macrospora / A. alternata) causing circular brown spots with concentric rings (target board appearance) on cotton leaves. Spots may coalesce causing premature defoliation.",
+        "scientificName": "Alternaria macrospora",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply Mancozeb (0.25%) or Copper oxychloride (0.25%) at 15-day intervals. Remove heavily infected leaves from field.",
+        "prevention": "Use treated seed (Thiram @ 3g/kg). Avoid overhead irrigation. Balanced fertilization. Plant spacing for air circulation.",
+        "fertilizer": "Balanced NPK with adequate potassium for disease resistance. Avoid nitrogen excess.",
+        "affectedParts": ["Leaves", "Bolls"],
+        "favorableConditions": "Warm humid weather (25-30°C) with frequent dew and rainfall.",
+        "spreadMechanism": "Wind-dispersed conidia. Survives on infected crop residue in soil."
+      }
+    },
+    "Cotton Jassid (Leafhopper) Damage": {
+      "plants": ["Cotton"],
+      "knowledge": {
+        "description": "Sucking pest damage from cotton jassids/leafhoppers (Amrasca biguttula biguttula) causing downward curling of leaf margins, yellowing, and 'hopper burn' — bronzing and drying of leaves from margins inward.",
+        "scientificName": "Amrasca biguttula biguttula",
+        "type": "Pest/Insect",
+        "severity": "Moderate to High",
+        "cure": "Apply Imidacloprid (0.3 ml/L), Acetamiprid, or Fipronil. Neem oil (2%) effective for moderate infestations. Use sticky traps for monitoring.",
+        "prevention": "Use jassid-resistant varieties (hairy leaf types). Avoid late sowing. Maintain plant spacing. Seed treatment with Imidacloprid.",
+        "fertilizer": "Balanced NPK. Avoid excessive nitrogen which produces succulent growth attractive to jassids.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Hot dry weather (30-40°C). Drought-stressed fields. Late-sown crops.",
+        "spreadMechanism": "Adults fly between plants and fields. High reproductive rate — multiple generations per season."
+      }
+    },
+    "Sugarcane Red Rot": {
+      "plants": ["Sugarcane"],
+      "knowledge": {
+        "description": "Most serious sugarcane disease (Colletotrichum falcatum) causing red discoloration of internal cane tissue with white transverse patches giving a 'red and white' pattern. Affected canes have a characteristic alcoholic smell and are hollow inside.",
+        "scientificName": "Colletotrichum falcatum",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "No effective chemical cure. Destroy infected setts and cane debris. Use disease-free planting material. Sett treatment with Carbendazim (0.1%) before planting.",
+        "prevention": "Use red rot-resistant varieties (Co-approved varieties). Hot water treatment of setts at 50°C for 2 hours. Avoid ratoon crops from infected fields. Crop rotation.",
+        "fertilizer": "Balanced NPK (150:60:60 kg/ha) with emphasis on potassium and phosphorus for plant vigor and disease tolerance.",
+        "affectedParts": ["Stalks (internal tissue)", "Leaves (midrib)"],
+        "favorableConditions": "High humidity, waterlogging, and temperature 25-30°C. Borer-damaged canes are predisposed to red rot.",
+        "spreadMechanism": "Rain-splashed conidia enter through borer holes and cut ends. Soil-borne inoculum. Infected setts."
+      }
+    },
+    "Sugarcane Smut": {
+      "plants": ["Sugarcane"],
+      "knowledge": {
+        "description": "Fungal disease (Sporisorium scitamineum) replacing the growing shoot apex with a long, black, whip-like structure (sorus) covered with dark teliospores. Affected canes are thin, grass-like, with excessive tillering.",
+        "scientificName": "Sporisorium scitamineum",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Remove and destroy infected plants (whips) before teliospores mature and release. Avoid ratoon crops from infected fields.",
+        "prevention": "Use smut-resistant varieties. Hot water treatment of setts at 52°C for 30 minutes or moist hot air at 54°C for 4 hours. Use tissue-cultured planting material.",
+        "fertilizer": "Balanced fertilization (150:60:60 NPK). Adequate potassium for disease resistance. Avoid excessive nitrogen.",
+        "affectedParts": ["Growing point/shoot apex", "Entire plant"],
+        "favorableConditions": "Warm dry weather for spore dispersal. Ratooning increases smut incidence.",
+        "spreadMechanism": "Wind-dispersed teliospores infect buds of setts. Soil-borne teliospores can survive for months."
+      }
+    },
+    "Sugarcane Yellow Leaf Disease": {
+      "plants": ["Sugarcane"],
+      "knowledge": {
+        "description": "Viral disease (Sugarcane Yellow Leaf Virus — ScYLV, Luteovirus) causing intense yellowing of the leaf midrib on the upper surface, progressing from tip downward. Leaf lamina shows general yellowing and necrosis.",
+        "scientificName": "Sugarcane Yellow Leaf Virus (ScYLV)",
+        "type": "Viral",
+        "severity": "Moderate to High",
+        "cure": "No cure. Remove symptomatic plants to prevent spread. Control aphid vectors (Melanaphis sacchari) with Imidacloprid.",
+        "prevention": "Use virus-free planting material (tissue culture). Meristem tip culture to eliminate virus. Control aphid populations with systemic insecticides.",
+        "fertilizer": "Ensure adequate nitrogen, iron, and magnesium to support plant health and mask symptoms.",
+        "affectedParts": ["Leaves (midrib)", "Entire plant"],
+        "favorableConditions": "Warm humid weather favoring aphid vector multiplication. Ratooning increases virus buildup.",
+        "spreadMechanism": "Transmitted by sugarcane aphid (Melanaphis sacchari) in a persistent circulative manner. Infected setts."
+      }
+    },
+    "Sugarcane Grassy Shoot": {
+      "plants": ["Sugarcane"],
+      "knowledge": {
+        "description": "Phytoplasma disease causing excessive tillering producing numerous thin, grass-like shoots with narrow chlorotic (pale/white) leaves. Affected clumps resemble a grass bush. No millable canes are produced.",
+        "scientificName": "Candidatus Phytoplasma spp.",
+        "type": "Phytoplasma",
+        "severity": "Very High",
+        "cure": "Remove and burn infected plant clumps completely. Use disease-free setts for replanting.",
+        "prevention": "Use heat-treated setts (50°C for 2 hours) or tissue culture planting material. Control leafhopper vectors (Matsumuratettix hiroglyphicus). Rogue infected plants early.",
+        "fertilizer": "Balanced NPK. Avoid excess nitrogen. Potassium and phosphorus improve disease tolerance.",
+        "affectedParts": ["Tillers", "Entire plant"],
+        "favorableConditions": "Warm weather (25-35°C) with active leafhopper populations. Ratooning increases disease incidence.",
+        "spreadMechanism": "Transmitted by leafhoppers (Matsumuratettix hiroglyphicus). Infected setts carry the phytoplasma."
+      }
+    },
+    "Sugarcane Wilt": {
+      "plants": ["Sugarcane"],
+      "knowledge": {
+        "description": "Fungal disease (Fusarium sacchari) causing gradual yellowing, wilting and drying of leaves from top downward. Internal cane tissue shows purple/brown discoloration. Plants emit a characteristic pineapple-like odor.",
+        "scientificName": "Fusarium sacchari",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "No effective chemical cure. Destroy infected clumps. Sett treatment with Carbendazim before planting.",
+        "prevention": "Use wilt-resistant varieties. Avoid waterlogging and ratoon crops beyond 2nd ratoon. Proper drainage.",
+        "fertilizer": "Balanced NPK with emphasis on potassium. Avoid nitrogen excess. Organic manure improves soil health.",
+        "affectedParts": ["Stalks", "Leaves", "Roots"],
+        "favorableConditions": "Waterlogged soils. High temperature (30-35°C). Stressed plants from drought followed by flooding.",
+        "spreadMechanism": "Soilborne fungus enters through roots and stem borer wounds. Infected setts."
+      }
+    },
+    "Wheat Leaf Rust": {
+      "plants": ["Wheat"],
+      "knowledge": {
+        "description": "Fungal disease (Puccinia triticina) causing small, round to oval, orange-brown pustules (uredinia) scattered randomly on upper leaf surfaces. Most common and widely distributed wheat rust worldwide.",
+        "scientificName": "Puccinia triticina",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Propiconazole (0.1%) or Tebuconazole at flag leaf stage. Two sprays at 15-day intervals may be needed.",
+        "prevention": "Plant resistant varieties (Lr gene series). Early sowing to avoid peak rust pressure. Destroy volunteer wheat and alternate hosts.",
+        "fertilizer": "Balanced NPK. Adequate potassium improves rust resistance. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Leaf sheaths"],
+        "favorableConditions": "Cool to moderate temperatures (15-22°C) with dew or light rain. Extended leaf wetness.",
+        "spreadMechanism": "Wind-dispersed urediniospores can travel thousands of kilometers. Long-distance aerial transport."
+      }
+    },
+    "Wheat Stem Rust": {
+      "plants": ["Wheat"],
+      "knowledge": {
+        "description": "Fungal disease (Puccinia graminis f. sp. tritici) causing large reddish-brown to black pustules on stems, leaf sheaths, and leaves. Pustules rupture epidermis giving a ragged appearance. Can cause 100% yield loss in susceptible varieties.",
+        "scientificName": "Puccinia graminis f. sp. tritici",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "Apply Propiconazole or Tebuconazole immediately at first sign. May require 2-3 applications. Harvest early if severely infected.",
+        "prevention": "Use resistant varieties (Sr gene series). Eradicate alternate host (Berberis spp./barberry). Monitor for new races (Ug99 and derivatives).",
+        "fertilizer": "Balanced NPK. Potassium-rich fertilizer strengthens stem tissue. Avoid excessive nitrogen that promotes soft tissue.",
+        "affectedParts": ["Stems", "Leaf sheaths", "Leaves", "Glumes"],
+        "favorableConditions": "Warm temperatures (20-30°C) with high humidity. Late-maturing crops most vulnerable.",
+        "spreadMechanism": "Wind-dispersed urediniospores. Alternate host (barberry) produces sexual spores allowing new race development."
+      }
+    },
+    "Wheat Yellow Rust (Stripe Rust)": {
+      "plants": ["Wheat"],
+      "knowledge": {
+        "description": "Fungal disease (Puccinia striiformis f. sp. tritici) causing yellow-orange pustules arranged in distinctive linear stripes along leaf veins. Most destructive in cool climates. Can cause 100% yield loss in severe epidemics.",
+        "scientificName": "Puccinia striiformis f. sp. tritici",
+        "type": "Fungal",
+        "severity": "Very High",
+        "cure": "Apply Propiconazole (0.1%) or Tebuconazole immediately. Spray at first appearance of stripe rust symptoms.",
+        "prevention": "Plant resistant varieties (Yr gene series). Early sowing. Balanced nitrogen. Destroy volunteer wheat plants.",
+        "fertilizer": "Balanced NPK. Avoid excessive nitrogen. Adequate potassium for disease resistance.",
+        "affectedParts": ["Leaves", "Leaf sheaths", "Glumes"],
+        "favorableConditions": "Cool temperatures (10-15°C) with dew or light rain. High elevation and northern plains.",
+        "spreadMechanism": "Wind-dispersed urediniospores. Long-distance aerial transport. Highly mobile pathogen."
+      }
+    },
+    "Wheat Powdery Mildew": {
+      "plants": ["Wheat"],
+      "knowledge": {
+        "description": "Fungal disease (Blumeria graminis f. sp. tritici) causing white to grayish powdery patches on leaves, stems, and heads. Reduces photosynthesis and grain filling.",
+        "scientificName": "Blumeria graminis f. sp. tritici",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply Propiconazole or Triadimefon. Sulfur-based fungicides are also effective.",
+        "prevention": "Resistant varieties. Avoid excessive nitrogen. Proper plant spacing. Avoid dense seeding rates.",
+        "fertilizer": "Balanced NPK. Silicon amendments reduce powdery mildew severity. Avoid late nitrogen application.",
+        "affectedParts": ["Leaves", "Stems", "Heads"],
+        "favorableConditions": "Cool to moderate temperatures (15-22°C) with high humidity but no free water needed on leaf surface.",
+        "spreadMechanism": "Wind-dispersed conidia. Overwinters as cleistothecia on crop debris."
+      }
+    },
+    "Wheat Karnal Bunt": {
+      "plants": ["Wheat"],
+      "knowledge": {
+        "description": "Fungal disease (Tilletia indica) partially converting wheat kernels to dark powdery teliospores with a characteristic fishy (trimethylamine) odor. Only part of each kernel is affected. Quarantine significance worldwide.",
+        "scientificName": "Tilletia indica",
+        "type": "Fungal",
+        "severity": "Moderate (but high quarantine importance)",
+        "cure": "No field cure. Treat seed with Carboxin + Thiram or Tebuconazole before planting. Clean and treat harvested grain.",
+        "prevention": "Use certified disease-free seed. Seed treatment mandatory. Early sowing to avoid coincidence of heading with wet weather.",
+        "fertilizer": "Balanced NPK. Adequate potassium. Good soil fertility reduces plant stress.",
+        "affectedParts": ["Grain kernels"],
+        "favorableConditions": "Cool temperatures (15-25°C) with rain or high humidity during heading/anthesis stage.",
+        "spreadMechanism": "Soilborne teliospores. Wind-dispersed secondary sporidia infect during flowering."
+      }
+    },
+    "Mango Anthracnose": {
+      "plants": ["Mango"],
+      "knowledge": {
+        "description": "Major fungal disease (Colletotrichum gloeosporioides) of mango causing black necrotic spots on leaves, blossom blight destroying flowers, and dark sunken lesions on fruit during ripening. Most important post-harvest disease of mango.",
+        "scientificName": "Colletotrichum gloeosporioides",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Carbendazim (0.1%) or Mancozeb (0.25%) during flowering. Hot water treatment of harvested fruit at 52°C for 5 minutes reduces post-harvest anthracnose.",
+        "prevention": "Prune canopy for air circulation. Remove dead wood and fallen leaves. Pre-bloom preventive sprays. Post-harvest hot water dip.",
+        "fertilizer": "Balanced NPK (1:0.5:1 ratio). Potassium-rich fertilizer during fruit development. Calcium sprays reduce fruit susceptibility.",
+        "affectedParts": ["Flowers", "Fruit", "Leaves", "Twigs"],
+        "favorableConditions": "Warm wet weather (25-30°C) during flowering and fruit development. Monsoon rains.",
+        "spreadMechanism": "Rain-splashed conidia from acervuli on dead twigs and mummified fruit."
+      }
+    },
+    "Mango Powdery Mildew": {
+      "plants": ["Mango"],
+      "knowledge": {
+        "description": "Fungal disease (Oidium mangiferae) causing white powdery growth on inflorescences (flower panicles), young leaves, and fruit. Severely infected flowers fail to set fruit causing major yield reduction.",
+        "scientificName": "Oidium mangiferae",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply wettable Sulfur (0.2%) or Dinocap or Hexaconazole at panicle emergence. Two sprays at 15-day intervals during flowering.",
+        "prevention": "Avoid excessive shading. Prune for air circulation. Time sprays with flowering onset (January-March in India).",
+        "fertilizer": "Balanced NPK. Potassium for disease resistance. Avoid excessive nitrogen during flowering.",
+        "affectedParts": ["Flowers/Inflorescence", "Young leaves", "Fruit"],
+        "favorableConditions": "Cool dry nights (10-15°C) and warm days. Cloudy weather. High humidity without rain.",
+        "spreadMechanism": "Wind-dispersed conidia. Can travel long distances."
+      }
+    },
+    "Mango Malformation": {
+      "plants": ["Mango"],
+      "knowledge": {
+        "description": "Fungal disease (Fusarium mangiferae) causing abnormal compact clustering of vegetative shoots (bunchy top) and malformed panicles (flowers remain green, sterile, and never set fruit). Major disease in Indian mango orchards.",
+        "scientificName": "Fusarium mangiferae",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Prune and burn malformed panicles and vegetative shoots immediately. Apply NAA (Naphthalene Acetic Acid) at 200 ppm to abort malformed panicles.",
+        "prevention": "Use disease-free nursery material. Control mango bud mite (Aceria mangiferae) which vectors the fungus. Avoid planting susceptible varieties.",
+        "fertilizer": "Balanced NPK. Avoid excessive nitrogen that promotes vegetative flushes.",
+        "affectedParts": ["Flower panicles", "Vegetative shoots"],
+        "favorableConditions": "Cool temperatures (15-20°C) during panicle initiation. Mango bud mite infestation.",
+        "spreadMechanism": "Mango bud mite carries fungal spores to buds. Infected nursery grafts."
+      }
+    },
+    "Banana Panama Wilt": {
+      "plants": ["Banana"],
+      "knowledge": {
+        "description": "Devastating soilborne fungal disease (Fusarium oxysporum f. sp. cubense) causing progressive yellowing and wilting of outer leaves, pseudostem splitting, and complete plant collapse. Tropical Race 4 (TR4) threatens global banana production.",
+        "scientificName": "Fusarium oxysporum f. sp. cubense",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "No effective chemical cure. Remove and destroy infected plants including corm and roots. Inject Carbendazim into pseudostem of surrounding plants as preventive. Soil solarization.",
+        "prevention": "Use TR4-resistant varieties (GCTCV-119, Mchare). Strict quarantine — prevent soil movement from infested to clean areas. Tissue culture planting material only.",
+        "fertilizer": "Balanced NPK (200:60:300 g/plant/year). High potassium for plant vigor. Organic amendments improve soil suppression.",
+        "affectedParts": ["Roots", "Corm", "Pseudostem", "Leaves"],
+        "favorableConditions": "Acidic sandy soils. Temperature 25-28°C. Waterlogged conditions. Nematode damage increases wilt susceptibility.",
+        "spreadMechanism": "Soilborne chlamydospores survive in soil for 30+ years. Spread through contaminated soil, water, tools, and footwear."
+      }
+    },
+    "Banana Sigatoka Leaf Spot": {
+      "plants": ["Banana"],
+      "knowledge": {
+        "description": "Fungal disease — Black Sigatoka (Mycosphaerella fijiensis) or Yellow Sigatoka (Mycosphaerella musicola) causing dark brown/black streaks and spots on banana leaves progressing to necrosis of large leaf areas. Reduces photosynthetic area and fruit quality.",
+        "scientificName": "Mycosphaerella fijiensis / M. musicola",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply systemic fungicides: Propiconazole, Difenoconazole, or Mancozeb in rotation. Oil-based sprays improve fungicide efficacy.",
+        "prevention": "Remove and destroy necrotic leaves (deleafing). Maintain proper spacing. Improve drainage. Use resistant varieties (FHIA-01, FHIA-18).",
+        "fertilizer": "Balanced NPK with potassium emphasis (300 g K₂O/plant/year). Silicon amendments reduce leaf spot severity.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Warm humid conditions (25-28°C) with frequent rainfall. Leaf wetness >10 hours.",
+        "spreadMechanism": "Wind and rain-dispersed ascospores and conidia. Can travel 1-2 km by wind."
+      }
+    },
+    "Banana Bunchy Top Virus": {
+      "plants": ["Banana"],
+      "knowledge": {
+        "description": "Viral disease (BBTV, Nanovirus) causing progressively smaller and bunched leaves at the top with dark green streaks along leaf margins and midrib ('Morse code' pattern). Plants produce no fruit. Most devastating viral disease of banana.",
+        "scientificName": "Banana Bunchy Top Virus (BBTV)",
+        "type": "Viral",
+        "severity": "Critical",
+        "cure": "No cure. Destroy infected plants completely (inject herbicide into pseudostem). Do not use suckers from infected mats.",
+        "prevention": "Use virus-free tissue culture planting material only. Control banana aphid vector (Pentalonia nigronervosa) with Imidacloprid. Community-wide eradication programs.",
+        "fertilizer": "Balanced NPK for healthy plants. Boost potassium for plant vigor.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Warm humid conditions favoring aphid populations. Use of infected suckers for planting.",
+        "spreadMechanism": "Persistently transmitted by banana aphid (Pentalonia nigronervosa). Infected planting material."
+      }
+    },
+    "Coconut Bud Rot": {
+      "plants": ["Coconut"],
+      "knowledge": {
+        "description": "Fungal disease (Phytophthora palmivora) causing rotting of the central growing bud (cabbage) of coconut palms. Spindle leaves wilt, turn brown, and fall off. Eventually the entire crown falls, killing the palm.",
+        "scientificName": "Phytophthora palmivora",
+        "type": "Oomycete",
+        "severity": "Critical",
+        "cure": "Remove rotted tissue. Apply Bordeaux paste to wound. Pour Metalaxyl + Mancozeb (0.2%) into the crown. Repeat monthly during monsoon.",
+        "prevention": "Good drainage around palms. Remove and burn dead palms. Crown application of Bordeaux mixture (1%) before monsoon. Avoid crown damage during harvesting.",
+        "fertilizer": "Balanced NPK (500:320:1200 g/palm/year). Potassium-rich for disease resistance. Borax for boron supplementation.",
+        "affectedParts": ["Growing bud/cabbage", "Crown", "Inflorescence"],
+        "favorableConditions": "Heavy rainfall, waterlogging, poor drainage. Monsoon season. Temperature 25-30°C.",
+        "spreadMechanism": "Rain-splashed zoospores. Waterborne inoculum. Infected palm tissue."
+      }
+    },
+    "Coconut Leaf Blight": {
+      "plants": ["Coconut"],
+      "knowledge": {
+        "description": "Fungal disease (Pestalotiopsis palmarum / Lasiodiplodia theobromae) causing gray-brown spots on leaf tips and margins that enlarge and coalesce. Severe cases cause extensive leaf drying affecting yield.",
+        "scientificName": "Pestalotiopsis palmarum",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Spray Mancozeb (0.25%) or Copper oxychloride (0.3%) on affected leaves. Remove severely blighted leaf portions.",
+        "prevention": "Maintain adequate nutrition (especially potassium). Good spacing. Remove dead leaves. Avoid water stress.",
+        "fertilizer": "Balanced NPK with high potassium (1200 g K₂O/palm/year). Magnesium supplements for palm health.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Nutrient-stressed palms. High humidity. Drought followed by wet periods.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Stress predisposes palms to infection."
+      }
+    },
+    "Groundnut Tikka Disease (Leaf Spot)": {
+      "plants": ["Groundnut", "Peanut"],
+      "knowledge": {
+        "description": "Two related fungal leaf spots — Early Leaf Spot (Cercospora arachidicola) causing brown spots with yellow halos on upper leaf surface, and Late Leaf Spot (Phaeoisariopsis personata) causing dark brown to black spots on lower surface. Together called Tikka disease. Major yield reducer.",
+        "scientificName": "Cercospora arachidicola / Phaeoisariopsis personata",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Chlorothalonil (0.2%) or Carbendazim + Mancozeb combination spray at 35, 50, 65, and 80 days after sowing.",
+        "prevention": "Use resistant varieties. Deep plowing to bury infected debris. Crop rotation with cereals. Intercropping with pearl millet.",
+        "fertilizer": "Balanced NPK (20:40:40 kg/ha). Gypsum at 500 kg/ha at flowering for calcium and sulfur. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Stems", "Pegs"],
+        "favorableConditions": "Warm humid conditions (25-30°C) with frequent rain. High humidity >80%.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Survives on infected crop debris."
+      }
+    },
+    "Groundnut Rust": {
+      "plants": ["Groundnut", "Peanut"],
+      "knowledge": {
+        "description": "Fungal disease (Puccinia arachidis) causing small orange-brown pustules (uredinia) primarily on lower leaf surfaces. Severe infections cause premature defoliation and significant yield loss.",
+        "scientificName": "Puccinia arachidis",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Mancozeb (0.25%) or Chlorothalonil at first pustule appearance. Repeat at 15-day intervals.",
+        "prevention": "Plant resistant varieties. Early sowing. Avoid late-season planting. Destroy volunteer groundnut plants.",
+        "fertilizer": "Balanced NPK. Potassium improves disease resistance. Gypsum application for calcium.",
+        "affectedParts": ["Leaves (primarily lower surface)"],
+        "favorableConditions": "Temperature 20-28°C with dew or rain. High humidity.",
+        "spreadMechanism": "Wind-dispersed urediniospores. Can travel long distances."
+      }
+    },
+    "Groundnut Stem Rot": {
+      "plants": ["Groundnut", "Peanut"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Sclerotium rolfsii) causing stem rot near soil level with white cottony mycelial growth and brown spherical sclerotia. Plants wilt and die. Also affects pods.",
+        "scientificName": "Sclerotium rolfsii",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Carbendazim drench (0.1%) at the base of plants. Remove and destroy infected plants with surrounding soil.",
+        "prevention": "Deep summer plowing to bury sclerotia. Seed treatment with Trichoderma viride. Crop rotation with cereals.",
+        "fertilizer": "Balanced NPK. Avoid excessive nitrogen. Apply lime in acidic soils to reduce sclerotial viability.",
+        "affectedParts": ["Stems (base)", "Pods", "Roots"],
+        "favorableConditions": "Warm moist soils (25-35°C). Acidic soils. High organic matter on soil surface.",
+        "spreadMechanism": "Soilborne sclerotia persist in soil for years. Spread through contaminated soil and water."
+      }
+    },
+    "Chickpea Wilt": {
+      "plants": ["Chickpea", "Bengal Gram"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Fusarium oxysporum f. sp. ciceris) causing progressive yellowing, wilting, and drying of chickpea plants. Vascular browning visible in stem cross-section. Can cause 100% loss in susceptible varieties.",
+        "scientificName": "Fusarium oxysporum f. sp. ciceris",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "No field cure. Seed treatment with Carbendazim + Thiram (1:1 at 3g/kg). Soil application of Trichoderma viride at 2.5 kg/ha.",
+        "prevention": "Use wilt-resistant varieties (JG-74, Avrodhi, Vishal). Crop rotation with cereals for 3+ years. Deep summer plowing.",
+        "fertilizer": "Balanced NPK (20:40:20 kg/ha). Rhizobium inoculation for nitrogen fixation. Phosphorus important for root development.",
+        "affectedParts": ["Roots", "Stems (vascular)", "Entire plant"],
+        "favorableConditions": "Soil temperature 20-25°C. Acidic to neutral soils. Previous chickpea cultivation increases inoculum.",
+        "spreadMechanism": "Soilborne chlamydospores. Seed-borne. Contaminated soil and water."
+      }
+    },
+    "Chickpea Ascochyta Blight": {
+      "plants": ["Chickpea", "Bengal Gram"],
+      "knowledge": {
+        "description": "Fungal disease (Ascochyta rabiei) causing circular brown spots with dark borders and visible pycnidia on leaves, stems, and pods. Stem girdling causes breakage. Pod infection leads to shriveled discolored seeds.",
+        "scientificName": "Ascochyta rabiei",
+        "type": "Fungal",
+        "severity": "Very High",
+        "cure": "Apply Mancozeb (0.25%) or Chlorothalonil at first symptom. Seed treatment with Thiram + Carbendazim.",
+        "prevention": "Use resistant varieties. Certified disease-free seed. Crop rotation. Remove infected crop debris.",
+        "fertilizer": "Balanced NPK. Phosphorus and potassium for disease tolerance. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Stems", "Pods", "Seeds"],
+        "favorableConditions": "Cool wet weather (15-25°C) with rainfall during flowering and podding.",
+        "spreadMechanism": "Rain-splashed conidia from pycnidia. Seed-borne. Infected crop debris."
+      }
+    },
+    "Lentil Rust": {
+      "plants": ["Lentil", "Masoor"],
+      "knowledge": {
+        "description": "Fungal disease (Uromyces viciae-fabae) causing small orange-brown pustules on leaves and stems. Severe infection causes premature defoliation, stem breakage, and major yield loss (up to 70%).",
+        "scientificName": "Uromyces viciae-fabae",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Mancozeb (0.25%) or Propiconazole at first symptom. Repeat at 15-day intervals.",
+        "prevention": "Plant resistant varieties. Early sowing. Destroy volunteer plants and crop debris.",
+        "fertilizer": "Balanced NPK (20:40:20 kg/ha). Rhizobium inoculation. Phosphorus for root vigor.",
+        "affectedParts": ["Leaves", "Stems", "Pods"],
+        "favorableConditions": "Cool humid weather (15-20°C) with dew and light rain.",
+        "spreadMechanism": "Wind-dispersed urediniospores."
+      }
+    },
+    "Pigeon Pea Wilt": {
+      "plants": ["Pigeon Pea", "Tur", "Arhar"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Fusarium udum) causing gradual yellowing and wilting. Partial wilt of individual branches may precede total plant wilting. Black streaks visible in roots and lower stem when split.",
+        "scientificName": "Fusarium udum",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Seed treatment with Carbendazim + Thiram. Soil application of Trichoderma viride at sowing.",
+        "prevention": "Resistant varieties (Asha, ICPL-87). Crop rotation with cereals. Deep summer plowing. Avoid waterlogging.",
+        "fertilizer": "Balanced NPK (20:50:20 kg/ha). Rhizobium + PSB inoculation. Gypsum for calcium.",
+        "affectedParts": ["Roots", "Stems", "Entire plant"],
+        "favorableConditions": "Soil temperature 25-30°C. Waterlogged soils. Continuous pigeon pea cultivation.",
+        "spreadMechanism": "Soilborne chlamydospores persist for years. Seed-borne transmission."
+      }
+    },
+    "Mustard White Rust": {
+      "plants": ["Mustard", "Rapeseed"],
+      "knowledge": {
+        "description": "Oomycete disease (Albugo candida) causing white blister-like pustules on undersides of leaves, stems, and flower parts. Infected inflorescences become swollen, distorted (stagheads) producing no seed.",
+        "scientificName": "Albugo candida",
+        "type": "Oomycete",
+        "severity": "High",
+        "cure": "Apply Metalaxyl + Mancozeb (Ridomil MZ) at first symptom. Mancozeb (0.25%) alone for mild infections.",
+        "prevention": "Use resistant varieties. Early sowing. Remove and destroy stagheads before spore release. Crop rotation.",
+        "fertilizer": "Balanced NPK (80:40:40 kg/ha). Sulfur application at 40 kg/ha important for mustard.",
+        "affectedParts": ["Leaves", "Stems", "Inflorescence", "Pods"],
+        "favorableConditions": "Cool humid weather (10-20°C) with morning dew. Dense crop canopy.",
+        "spreadMechanism": "Wind-dispersed sporangia. Soilborne oospores survive between seasons."
+      }
+    },
+    "Mustard Alternaria Blight": {
+      "plants": ["Mustard", "Rapeseed"],
+      "knowledge": {
+        "description": "Fungal disease (Alternaria brassicae / A. brassicicola) causing dark brown to black spots with concentric rings on leaves, stems, and pods. Major disease of mustard in India causing 15-45% yield loss.",
+        "scientificName": "Alternaria brassicae",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Mancozeb (0.25%) or Iprodione at first symptom. Repeat at 15-day intervals during pod formation.",
+        "prevention": "Use resistant varieties. Seed treatment with Iprodione. Early sowing. Destroy crop debris after harvest.",
+        "fertilizer": "Balanced NPK with sulfur (40 kg/ha). Potassium for disease resistance.",
+        "affectedParts": ["Leaves", "Stems", "Pods", "Seeds"],
+        "favorableConditions": "Warm humid weather (20-30°C) with alternate wetting and drying.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Seed-borne. Infected crop residue."
+      }
+    },
+    "Sunflower Alternaria Leaf Spot": {
+      "plants": ["Sunflower"],
+      "knowledge": {
+        "description": "Fungal disease (Alternaria helianthi) causing dark brown spots with concentric rings on leaves. Severe infections cause premature defoliation and head rot, reducing seed yield and oil content.",
+        "scientificName": "Alternaria helianthi",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Mancozeb (0.25%) or Chlorothalonil at first symptom. Repeat at 15-day intervals.",
+        "prevention": "Use resistant hybrids. Crop rotation. Destroy infected crop debris. Avoid dense planting.",
+        "fertilizer": "Balanced NPK (80:60:40 kg/ha). Boron and sulfur supplements for seed quality.",
+        "affectedParts": ["Leaves", "Stems", "Heads"],
+        "favorableConditions": "Warm humid weather (25-30°C) with frequent rain.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Seed-borne."
+      }
+    },
+    "Onion Purple Blotch": {
+      "plants": ["Onion"],
+      "knowledge": {
+        "description": "Fungal disease (Alternaria porri) causing large purple-brown oval lesions with concentric rings on onion leaves and seed stalks. Lesions girdle leaves causing tip dieback. Major disease in tropical and subtropical onion production.",
+        "scientificName": "Alternaria porri",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Mancozeb (0.25%) + sticker, or Chlorothalonil every 10-14 days. Tricyclazole also effective.",
+        "prevention": "Use resistant varieties. Ensure proper plant spacing. Avoid overhead irrigation. Remove crop debris after harvest.",
+        "fertilizer": "Balanced NPK (100:50:50 kg/ha). Sulfur at 40 kg/ha essential for onion. Adequate potassium for bulb quality.",
+        "affectedParts": ["Leaves", "Seed stalks", "Bulbs (neck)"],
+        "favorableConditions": "Warm humid weather (25-30°C) with alternating wet and dry periods. Thrips damage predisposes leaves.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Survives in crop debris."
+      }
+    },
+    "Onion Downy Mildew": {
+      "plants": ["Onion"],
+      "knowledge": {
+        "description": "Oomycete disease (Peronospora destructor) causing pale green to yellow elongated patches on leaves with grayish-violet furry sporulation. Leaves bend and collapse at infection point.",
+        "scientificName": "Peronospora destructor",
+        "type": "Oomycete",
+        "severity": "High",
+        "cure": "Apply Metalaxyl + Mancozeb (Ridomil MZ 72 WP at 0.25%). Repeat at 10-day intervals during wet weather.",
+        "prevention": "3-4 year crop rotation. Use disease-free sets/transplants. Good air circulation. Avoid overhead irrigation.",
+        "fertilizer": "Balanced NPK. Potassium for disease resistance. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Seed stalks"],
+        "favorableConditions": "Cool moist weather (10-20°C) with fog, heavy dew, or drizzle. Night temperatures above 4°C.",
+        "spreadMechanism": "Wind-dispersed sporangia. Soilborne oospores survive in debris."
+      }
+    },
+    "Chili Leaf Curl Virus": {
+      "plants": ["Chili", "Hot Pepper", "Capsicum"],
+      "knowledge": {
+        "description": "Viral disease (Chili Leaf Curl Virus — ChiLCV, Begomovirus) transmitted by whitefly causing upward curling, puckering, and crinkling of leaves. Plants are stunted with reduced branching and poor fruit set.",
+        "scientificName": "Chili Leaf Curl Virus (ChiLCV)",
+        "type": "Viral",
+        "severity": "Very High",
+        "cure": "No cure. Rogue infected plants. Control whitefly with Imidacloprid (0.3 ml/L) or Thiamethoxam. Yellow sticky traps for monitoring.",
+        "prevention": "Use tolerant varieties. Seedbed protection with insect-proof nets. Barrier crops (maize/sorghum). Reflective mulch.",
+        "fertilizer": "Balanced NPK. Micronutrients (Zn, Fe, B) to support remaining healthy plants.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Hot dry weather with high whitefly populations. Summer season.",
+        "spreadMechanism": "Persistently transmitted by whitefly (Bemisia tabaci)."
+      }
+    },
+    "Chili Anthracnose (Fruit Rot)": {
+      "plants": ["Chili", "Hot Pepper", "Capsicum"],
+      "knowledge": {
+        "description": "Fungal disease (Colletotrichum capsici / C. gloeosporioides) causing sunken circular dark spots on ripening fruit with concentric rings of acervuli producing salmon-pink spore masses. Major cause of fruit rot in chili.",
+        "scientificName": "Colletotrichum capsici",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Mancozeb (0.25%) + Carbendazim (0.1%) at fruit setting. Remove and destroy infected fruits.",
+        "prevention": "Use resistant varieties. Seed treatment with Thiram. Avoid overhead irrigation. Harvest ripe fruits promptly.",
+        "fertilizer": "Balanced NPK (100:50:50 kg/ha). Calcium for fruit quality. Potassium for disease resistance.",
+        "affectedParts": ["Fruit", "Seeds"],
+        "favorableConditions": "Warm humid weather (25-30°C) with frequent rain during fruit ripening.",
+        "spreadMechanism": "Rain-splashed conidia. Seed-borne. Infected crop debris."
+      }
+    },
+    "Chili Powdery Mildew": {
+      "plants": ["Chili", "Hot Pepper", "Capsicum"],
+      "knowledge": {
+        "description": "Fungal disease (Leveillula taurica) causing white powdery patches on lower leaf surfaces with corresponding yellow spots on upper surface. Unlike typical powdery mildews, sporulation is primarily on the abaxial (lower) surface.",
+        "scientificName": "Leveillula taurica",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply wettable Sulfur (0.25%) or Dinocap. Hexaconazole effective for severe cases.",
+        "prevention": "Resistant varieties. Good plant spacing. Avoid excessive nitrogen.",
+        "fertilizer": "Balanced NPK. Potassium emphasis. Silicon supplements for strengthened cell walls.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Warm dry weather (25-35°C) with low humidity. Unlike most mildews, thrives in dry conditions.",
+        "spreadMechanism": "Wind-dispersed conidia."
+      }
+    },
+    "Cabbage Black Rot": {
+      "plants": ["Cabbage", "Cauliflower", "Broccoli", "Kale"],
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas campestris pv. campestris) causing V-shaped yellow to brown lesions from leaf margins with darkened (black) veins. The most important disease of cruciferous vegetables worldwide.",
+        "scientificName": "Xanthomonas campestris pv. campestris",
+        "type": "Bacterial",
+        "severity": "High",
+        "cure": "No effective chemical control once established. Remove and destroy infected plants. Apply Streptocycline (100 ppm) + Copper oxychloride preventively.",
+        "prevention": "Use certified disease-free hot-water treated seed (50°C for 25 min). Crop rotation for 2-3 years. Avoid overhead irrigation.",
+        "fertilizer": "Balanced NPK. Calcium for cell wall strength. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Head", "Stems"],
+        "favorableConditions": "Warm humid weather (25-30°C) with rain. Insect damage and wounds facilitate entry.",
+        "spreadMechanism": "Seed-borne. Rain splash. Contaminated tools and workers."
+      }
+    },
+    "Cabbage Clubroot": {
+      "plants": ["Cabbage", "Cauliflower", "Broccoli", "Mustard"],
+      "knowledge": {
+        "description": "Soilborne protist disease (Plasmodiophora brassicae) causing swollen, distorted, club-shaped roots. Plants wilt during day and recover at night initially. Eventually permanent wilting and death. Resting spores survive 15+ years in soil.",
+        "scientificName": "Plasmodiophora brassicae",
+        "type": "Protist",
+        "severity": "Very High",
+        "cure": "No chemical cure. Remove infected plants with roots. Apply lime to raise soil pH above 7.2 which suppresses clubroot.",
+        "prevention": "Raise soil pH to 7.2+ with lime application. Use clubroot-resistant varieties. Long crop rotation (7+ years). Ensure good drainage.",
+        "fertilizer": "Apply agricultural lime (2-4 tonnes/ha) to increase pH. Balanced NPK after liming. Calcium-rich amendments.",
+        "affectedParts": ["Roots"],
+        "favorableConditions": "Acidic soils (pH < 6.5). Warm moist conditions (20-25°C). Poor drainage.",
+        "spreadMechanism": "Soilborne resting spores survive 15-20 years. Spread through contaminated soil, water, and transplants."
+      }
+    },
+    "Cucumber Downy Mildew": {
+      "plants": ["Cucumber", "Melon", "Watermelon", "Pumpkin"],
+      "knowledge": {
+        "description": "Oomycete disease (Pseudoperonospora cubensis) causing angular yellow spots bounded by leaf veins on upper surface, with purplish-gray downy sporulation on corresponding lower surface. Rapid progression can kill vines in 1-2 weeks.",
+        "scientificName": "Pseudoperonospora cubensis",
+        "type": "Oomycete",
+        "severity": "Very High",
+        "cure": "Apply Metalaxyl + Mancozeb or Cymoxanil + Mancozeb at first symptom. Spray both surfaces of leaves. Repeat every 5-7 days.",
+        "prevention": "Use resistant varieties. Ensure good air circulation. Avoid overhead irrigation. Remove volunteer cucurbits.",
+        "fertilizer": "Balanced NPK. Potassium for disease resistance. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Cool nights (10-15°C) and warm days with dew, fog, or rain. Leaf wetness >6 hours.",
+        "spreadMechanism": "Wind-dispersed sporangia. Long-distance aerial transport from southern regions northward."
+      }
+    },
+    "Cucumber Powdery Mildew": {
+      "plants": ["Cucumber", "Melon", "Squash"],
+      "knowledge": {
+        "description": "Fungal disease (Podosphaera xanthii / Erysiphe cichoracearum) causing white powdery spots on upper leaf surfaces expanding to cover entire leaves. Reduces photosynthesis and fruit quality.",
+        "scientificName": "Podosphaera xanthii",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Sulfur (0.2%), potassium bicarbonate, or Myclobutanil. Neem oil for mild infections.",
+        "prevention": "Plant resistant varieties. Proper spacing. Avoid excessive nitrogen. Lower leaf pruning for air flow.",
+        "fertilizer": "Balanced NPK with potassium emphasis. Silicon supplements reduce severity.",
+        "affectedParts": ["Leaves", "Stems"],
+        "favorableConditions": "Warm dry days (20-30°C) with cool humid nights. No free water needed.",
+        "spreadMechanism": "Wind-dispersed conidia. Does not need rain for infection."
+      }
+    },
+    "Watermelon Fusarium Wilt": {
+      "plants": ["Watermelon"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Fusarium oxysporum f. sp. niveum) causing wilting, yellowing, and death of watermelon vines. Runners wilt one at a time. Vascular browning visible when stems are cut.",
+        "scientificName": "Fusarium oxysporum f. sp. niveum",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "No field cure. Use grafted plants on resistant rootstock (bottle gourd, Lagenaria siceraria). Soil solarization.",
+        "prevention": "Use resistant varieties. Grafting on wilt-resistant rootstock. Crop rotation (5+ years). Maintain soil pH 6.5-7.0.",
+        "fertilizer": "Balanced NPK. Calcium amendments. Nitrate-nitrogen (NOT ammonium) reduces wilt severity.",
+        "affectedParts": ["Roots", "Stems (vascular)", "Entire vine"],
+        "favorableConditions": "Warm soils (22-28°C). Acidic soils. Previous watermelon cultivation.",
+        "spreadMechanism": "Soilborne chlamydospores survive 15+ years. Spread through contaminated soil and water."
+      }
+    },
+    "Pomegranate Bacterial Blight (Oily Spot)": {
+      "plants": ["Pomegranate"],
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas axonopodis pv. punicae) causing dark brown to black water-soaked spots with oily appearance on leaves, and dark cracking lesions on fruit ('oily spot'). Most devastating disease of pomegranate in India.",
+        "scientificName": "Xanthomonas axonopodis pv. punicae",
+        "type": "Bacterial",
+        "severity": "Critical",
+        "cure": "Apply Streptocycline (500 ppm) + Copper oxychloride (0.25%) at 15-day intervals. Remove and destroy severely infected branches.",
+        "prevention": "Use disease-free planting material. Prune for aeration. Avoid overhead irrigation. Windbreaks reduce rain-splash spread.",
+        "fertilizer": "Balanced NPK (500:250:500 g/tree/year). Potassium and calcium for disease resistance. Zinc and boron supplements.",
+        "affectedParts": ["Leaves", "Fruit", "Twigs"],
+        "favorableConditions": "Warm humid weather (25-35°C) with monsoon rains. Wind-driven rain.",
+        "spreadMechanism": "Rain splash. Wind-driven rain. Contaminated pruning tools."
+      }
+    },
+    "Pomegranate Wilt": {
+      "plants": ["Pomegranate"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Ceratocystis fimbriata) causing sudden wilting and drying of pomegranate trees. Bark shows dark discoloration. Infected wood has characteristic banana-like odor.",
+        "scientificName": "Ceratocystis fimbriata",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "No effective cure. Remove and destroy infected trees completely including roots. Soil solarization of planting pit.",
+        "prevention": "Use disease-free planting material from tissue culture. Avoid planting in previously infected sites. Drenching with Carbendazim.",
+        "fertilizer": "Balanced NPK with organic manure. Good drainage essential.",
+        "affectedParts": ["Roots", "Trunk", "Branches", "Entire tree"],
+        "favorableConditions": "Waterlogged soils. Bark beetle damage provides entry points. Temperature 25-30°C.",
+        "spreadMechanism": "Soilborne. Bark beetles (Hypocryphalus mangiferae) vector the fungus. Contaminated tools."
+      }
+    },
+    "Guava Wilt": {
+      "plants": ["Guava"],
+      "knowledge": {
+        "description": "Complex disease caused by Fusarium oxysporum f. sp. psidii and/or Ganoderma lucidum. Causes progressive yellowing, wilting, and drying of guava trees. Roots show rotting with mushroom-like fruiting bodies in Ganoderma cases.",
+        "scientificName": "Fusarium oxysporum f. sp. psidii / Ganoderma lucidum",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "No effective cure for advanced cases. Drench soil with Carbendazim (0.1%). Apply Trichoderma viride to root zone. Trunk injection with fungicides.",
+        "prevention": "Plant on raised beds with good drainage. Use resistant rootstocks. Apply neem cake at 2 kg/tree. Biocontrol with Trichoderma.",
+        "fertilizer": "Balanced NPK (250:150:250 g/tree/year). Organic manure (25 kg/tree). Micronutrients (Zn, Mn, Fe).",
+        "affectedParts": ["Roots", "Trunk", "Entire tree"],
+        "favorableConditions": "Waterlogged heavy soils. Trees over 10 years old more susceptible. Rainy season.",
+        "spreadMechanism": "Soilborne fungi. Spread through contaminated soil, water, and roots of infected trees."
+      }
+    },
+    "Papaya Ring Spot Virus": {
+      "plants": ["Papaya"],
+      "knowledge": {
+        "description": "Viral disease (Papaya Ringspot Virus — PRSV, Potyvirus) causing mosaic and distortion of leaves, water-soaked oily streaks on stems/petioles, and distinctive dark green ring patterns on fruit surface. Devastating for papaya cultivation.",
+        "scientificName": "Papaya Ringspot Virus (PRSV)",
+        "type": "Viral",
+        "severity": "Critical",
+        "cure": "No cure. Destroy infected plants immediately. Some success with cross-protection using mild PRSV strains in Hawaii.",
+        "prevention": "Plant PRSV-resistant transgenic varieties where available. Barrier crops (maize). Control aphid vectors. Rogue infected plants early.",
+        "fertilizer": "Balanced NPK (200:200:400 g/plant/year). Micronutrients for plant vigor.",
+        "affectedParts": ["Leaves", "Fruit", "Stems/Petioles"],
+        "favorableConditions": "Warm weather with active aphid populations. Year-round in tropical regions.",
+        "spreadMechanism": "Non-persistently transmitted by multiple aphid species (Aphis gossypii, Myzus persicae). Quick acquisition and transmission."
+      }
+    },
+    "Lemon Canker": {
+      "plants": ["Lemon", "Lime", "Citrus"],
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas citri subsp. citri) causing raised, corky, crater-like lesions with water-soaked margins and yellow halos on leaves, fruit, and stems. Severe infections cause defoliation, fruit drop, and twig dieback.",
+        "scientificName": "Xanthomonas citri subsp. citri",
+        "type": "Bacterial",
+        "severity": "High",
+        "cure": "Apply Copper oxychloride (0.25%) + Streptocycline (100 ppm) at 15-day intervals. Prune severely infected branches.",
+        "prevention": "Use certified disease-free nursery stock. Windbreaks to reduce wind-driven rain injury. Control citrus leaf miner which creates wounds for bacterial entry.",
+        "fertilizer": "Balanced NPK. Micronutrients (Zn, Mn, Fe, B) essential for citrus. Adequate potassium for fruit quality.",
+        "affectedParts": ["Leaves", "Fruit", "Twigs"],
+        "favorableConditions": "Warm humid weather (20-35°C) with wind-driven rain. Wounds from thorns, insects, or wind provide entry.",
+        "spreadMechanism": "Wind-driven rain splash. Contaminated tools. Movement of infected plant material."
+      }
+    },
+    "Tea Blister Blight": {
+      "plants": ["Tea"],
+      "knowledge": {
+        "description": "Fungal disease (Exobasidium vexans) causing small translucent pale spots on young tender leaves that enlarge to form convex blisters on upper surface with concave white velvety sporulation on lower surface. Most important disease of tea.",
+        "scientificName": "Exobasidium vexans",
+        "type": "Fungal",
+        "severity": "Very High",
+        "cure": "Apply Copper oxychloride (0.2%) or Hexaconazole (0.01%) at 7-day intervals during wet weather. Pluck infected leaves during dry weather.",
+        "prevention": "Maintain proper shade level (40-60%). Avoid over-pruning that produces excessive young shoots. Ensure good drainage and aeration.",
+        "fertilizer": "Balanced NPK (300:100:100 kg/ha/year). Potassium for disease resistance. Zinc and magnesium supplements.",
+        "affectedParts": ["Young leaves", "Buds", "Tender stems"],
+        "favorableConditions": "Cool humid weather (15-25°C) with intermittent sunshine and rain. Misty conditions in highlands.",
+        "spreadMechanism": "Wind-dispersed basidiospores from blisters. Only infects young tender leaves, not mature ones."
+      }
+    },
+    "Tea Red Rust": {
+      "plants": ["Tea"],
+      "knowledge": {
+        "description": "Algal disease (Cephaleuros virescens) causing orange-red velvety patches on mature tea leaves and stems. Reduces photosynthetic area and weakens branches. Not a true rust — caused by parasitic green algae.",
+        "scientificName": "Cephaleuros virescens",
+        "type": "Algal",
+        "severity": "Moderate",
+        "cure": "Apply Copper oxychloride (0.2%) at onset of monsoon. Prune heavily affected branches.",
+        "prevention": "Maintain proper shade. Avoid waterlogging. Good pruning practices. Ensure adequate nutrition.",
+        "fertilizer": "Balanced NPK. Zinc sulfate spray for bush vigor. Potassium for resistance.",
+        "affectedParts": ["Leaves", "Stems"],
+        "favorableConditions": "High humidity with poor air circulation. Heavy shade. Weak and neglected bushes.",
+        "spreadMechanism": "Rain-splashed zoospores. Spreads during wet weather."
+      }
+    },
+    "Coffee Leaf Rust": {
+      "plants": ["Coffee"],
+      "knowledge": {
+        "description": "Fungal disease (Hemileia vastatrix) causing yellow-orange powdery pustules on lower leaf surfaces with corresponding yellow spots on upper surface. Causes severe defoliation and dieback. Has devastated coffee plantations globally.",
+        "scientificName": "Hemileia vastatrix",
+        "type": "Fungal",
+        "severity": "Critical",
+        "cure": "Apply Copper oxychloride (0.25%) or Propiconazole at first pustule. Triazole-based systemic fungicides for severe outbreaks.",
+        "prevention": "Plant resistant varieties (Catimor, Sarchimor). Maintain proper shade. Balanced fertilization. Timely harvesting to reduce berry load stress.",
+        "fertilizer": "Balanced NPK (100:75:100 kg/ha/year). High potassium for disease resistance. Organic mulch for soil health.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Warm humid conditions (20-25°C) with rainfall. Altitude 1000-1500m. Heavy berry load stresses trees.",
+        "spreadMechanism": "Wind and rain-dispersed urediniospores. Can travel hundreds of kilometers by wind."
+      }
+    },
+    "Coffee Berry Disease": {
+      "plants": ["Coffee"],
+      "knowledge": {
+        "description": "Fungal disease (Colletotrichum kahawae) causing dark sunken anthracnose lesions on green developing coffee berries. Berries turn black and mummify. Can cause 50-80% crop loss in Arabica coffee.",
+        "scientificName": "Colletotrichum kahawae",
+        "type": "Fungal",
+        "severity": "Very High",
+        "cure": "Apply Copper oxychloride or Chlorothalonil from initial fruit set. Repeat at 3-4 week intervals through berry expansion.",
+        "prevention": "Use resistant varieties. Proper shade management. Remove mummified berries. Timely fungicide application.",
+        "fertilizer": "Balanced NPK. Calcium and boron for berry development. Potassium for plant vigor.",
+        "affectedParts": ["Berries", "Flowers"],
+        "favorableConditions": "Cool wet weather (15-25°C) during berry expansion. Heavy rainfall. Altitude >1300m.",
+        "spreadMechanism": "Rain-splashed conidia from mummified berries and bark lesions."
+      }
+    },
+    "Rubber Abnormal Leaf Fall": {
+      "plants": ["Rubber"],
+      "knowledge": {
+        "description": "Fungal disease (Phytophthora spp.) causing premature shedding of mature and immature leaves during monsoon season. Leaves show water-soaked lesions that turn brown/black. Repeated defoliation reduces latex yield significantly.",
+        "scientificName": "Phytophthora palmivora / P. meadii",
+        "type": "Oomycete",
+        "severity": "High",
+        "cure": "Aerial spraying with Mancozeb + Copper oxychloride during monsoon. Ground-level fogging in small holdings.",
+        "prevention": "Plant tolerant clones (RRII 105, RRIM 600). Maintain adequate plant spacing. Good drainage.",
+        "fertilizer": "Balanced NPK (10:10:10 kg/tree/year). Potassium and magnesium for latex production.",
+        "affectedParts": ["Leaves", "Shoots"],
+        "favorableConditions": "Heavy monsoon rains. High humidity >95%. Temperature 25-30°C.",
+        "spreadMechanism": "Rain-splashed zoospores. Wind-dispersed sporangia during storms."
+      }
+    },
+    "Cashew Anthracnose": {
+      "plants": ["Cashew"],
+      "knowledge": {
+        "description": "Fungal disease (Colletotrichum gloeosporioides) causing dark brown to black spots on young leaves, blossom blight, and fruit rot. Severe in humid tropical regions during monsoon.",
+        "scientificName": "Colletotrichum gloeosporioides",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Apply Carbendazim (0.1%) or Mancozeb (0.25%) during flowering and fruit set.",
+        "prevention": "Prune canopy for air circulation. Remove dead wood. Use resistant varieties.",
+        "fertilizer": "Balanced NPK (750:325:750 g/tree/year). Organic manure. Micronutrients.",
+        "affectedParts": ["Leaves", "Flowers", "Fruit", "Twigs"],
+        "favorableConditions": "Warm humid weather (25-30°C) with frequent rain. Monsoon season.",
+        "spreadMechanism": "Rain-splashed conidia. Infected plant debris."
+      }
+    },
+    "Turmeric Leaf Blotch": {
+      "plants": ["Turmeric"],
+      "knowledge": {
+        "description": "Fungal disease (Taphrina maculans) causing small oval to irregular brown spots with pale centers on both leaf surfaces. Spots enlarge and coalesce causing extensive leaf blight.",
+        "scientificName": "Taphrina maculans",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply Mancozeb (0.25%) or Carbendazim (0.1%) at 15-day intervals during monsoon.",
+        "prevention": "Use disease-free rhizomes. Seed treatment with Mancozeb. Crop rotation. Remove crop debris.",
+        "fertilizer": "Balanced NPK (60:50:120 kg/ha). Organic manure (25 tonnes/ha). Neem cake as soil amendment.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Warm humid conditions (25-30°C) during monsoon season.",
+        "spreadMechanism": "Wind and rain-dispersed spores. Infected rhizomes."
+      }
+    },
+    "Turmeric Rhizome Rot": {
+      "plants": ["Turmeric"],
+      "knowledge": {
+        "description": "Soilborne disease caused by Pythium spp. or Fusarium spp. causing rotting of rhizomes with foul smell. Above-ground symptoms include yellowing, wilting, and collapse of pseudostems.",
+        "scientificName": "Pythium aphanidermatum / Fusarium solani",
+        "type": "Oomycete/Fungal",
+        "severity": "High",
+        "cure": "Drench soil with Metalaxyl + Mancozeb. Treat rhizomes with Mancozeb (0.25%) for 30 minutes before planting.",
+        "prevention": "Good drainage. Seed rhizome treatment mandatory. Apply Trichoderma viride at planting. Avoid waterlogging.",
+        "fertilizer": "Balanced NPK. Neem cake (200 kg/ha) at planting reduces soilborne pathogens.",
+        "affectedParts": ["Rhizomes", "Roots", "Pseudostems"],
+        "favorableConditions": "Waterlogged soils. Heavy monsoon rains. Poor drainage.",
+        "spreadMechanism": "Soilborne zoospores. Contaminated irrigation water. Infected rhizomes."
+      }
+    },
+    "Ginger Soft Rot (Rhizome Rot)": {
+      "plants": ["Ginger"],
+      "knowledge": {
+        "description": "Most destructive ginger disease caused by Pythium spp. (primarily P. myriotylum). Water-soaked spots appear at stem base, rhizomes become soft and mushy with foul odor. Plants yellow and collapse. Can cause 50-90% loss.",
+        "scientificName": "Pythium myriotylum / P. aphanidermatum",
+        "type": "Oomycete",
+        "severity": "Critical",
+        "cure": "Drench affected areas with Metalaxyl + Mancozeb (Ridomil MZ). Remove and destroy infected plants with surrounding soil.",
+        "prevention": "Treat seed rhizomes with Mancozeb (0.25%) for 30 minutes. Apply Trichoderma harzianum at planting. Ensure excellent drainage. Raised bed cultivation.",
+        "fertilizer": "Balanced NPK (75:50:50 kg/ha). Heavy organic manure (25-30 tonnes/ha). Neem cake as amendment.",
+        "affectedParts": ["Rhizomes", "Roots", "Pseudostems"],
+        "favorableConditions": "Waterlogged soils during heavy monsoon. High temperature (30-35°C). Poor drainage.",
+        "spreadMechanism": "Soilborne zoospores spread through water. Infected rhizomes. Contaminated tools."
+      }
+    },
+    "Ginger Bacterial Wilt": {
+      "plants": ["Ginger"],
+      "knowledge": {
+        "description": "Bacterial disease (Ralstonia solanacearum) causing rapid wilting and yellowing of ginger plants. Milky bacterial ooze exudes from cut stems when placed in water. Rhizomes show water-soaked to dark brown internal discoloration.",
+        "scientificName": "Ralstonia solanacearum",
+        "type": "Bacterial",
+        "severity": "Very High",
+        "cure": "No chemical cure. Remove and destroy infected plants. Treat surrounding soil with bleaching powder (20 g/m²).",
+        "prevention": "Use disease-free rhizomes from non-infected fields. Strict crop rotation (4+ years). Soil solarization. Biocontrol with Pseudomonas fluorescens.",
+        "fertilizer": "Balanced NPK. Apply well-decomposed organic manure only. Avoid fresh manure.",
+        "affectedParts": ["Rhizomes", "Stems", "Roots", "Entire plant"],
+        "favorableConditions": "Warm temperatures (25-35°C). Waterlogged soils. Acidic soils (pH <5.5).",
+        "spreadMechanism": "Soilborne. Contaminated irrigation water. Infected rhizomes. Tools and footwear."
+      }
+    },
+    "Cardamom Katte (Mosaic) Virus": {
+      "plants": ["Cardamom"],
+      "knowledge": {
+        "description": "Viral disease (Cardamom Mosaic Virus — CdMV) causing pale green mosaic stripes along veins ('katte' means tied up in Kannada). Plants become stunted with reduced tillering and poor capsule setting.",
+        "scientificName": "Cardamom Mosaic Virus (CdMV)",
+        "type": "Viral",
+        "severity": "High",
+        "cure": "No cure. Rogue infected plants immediately. Control banana aphid vector.",
+        "prevention": "Use virus-free planting material from certified nurseries. Remove infected plants early. Control aphid vectors with systemic insecticides.",
+        "fertilizer": "Balanced NPK (75:75:150 kg/ha). Organic mulch. Micronutrients (Zn, B).",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Warm humid conditions with aphid activity. Monsoon season.",
+        "spreadMechanism": "Transmitted by banana aphid (Pentalonia nigronervosa). Infected rhizomes."
+      }
+    },
+    "Cardamom Capsule Rot (Azhukal)": {
+      "plants": ["Cardamom"],
+      "knowledge": {
+        "description": "Oomycete disease (Phytophthora meadii) causing water-soaked spots on capsules (fruits) that turn brown/black. Also causes leaf rot and stem rot. Called 'Azhukal' locally. Most damaging disease during monsoon.",
+        "scientificName": "Phytophthora meadii",
+        "type": "Oomycete",
+        "severity": "Very High",
+        "cure": "Spray Metalaxyl + Mancozeb (Ridomil MZ 0.2%) or Potassium phosphonate at 15-day intervals during monsoon.",
+        "prevention": "Maintain 50% shade. Good drainage. Remove infected capsules. Bordeaux mixture (1%) prophylactic spray before monsoon.",
+        "fertilizer": "Balanced NPK (75:75:150 kg/ha). Potassium for disease resistance. Organic manure.",
+        "affectedParts": ["Capsules/Fruit", "Leaves", "Stems"],
+        "favorableConditions": "Heavy monsoon rainfall. Waterlogging. Temperature 20-28°C. Poor drainage.",
+        "spreadMechanism": "Rain-splashed zoospores. Soil splashing onto capsules."
+      }
+    },
+    "Black Pepper Quick Wilt (Foot Rot)": {
+      "plants": ["Black Pepper"],
+      "knowledge": {
+        "description": "Oomycete disease (Phytophthora capsici) causing rapid wilting and death of black pepper vines. Collar region shows dark water-soaked lesion. Roots and basal stem rot. Leaves droop, turn black, and fall. Can kill vines within weeks.",
+        "scientificName": "Phytophthora capsici",
+        "type": "Oomycete",
+        "severity": "Critical",
+        "cure": "Drench root zone with Metalaxyl + Mancozeb (0.2%). Copper oxychloride spray on foliage. Trunk paste with Bordeaux paste.",
+        "prevention": "Ensure excellent drainage. Avoid waterlogging. Provide shade trees. Apply Trichoderma harzianum + Pseudomonas fluorescens at root zone. Trench around infected vines.",
+        "fertilizer": "Balanced NPK (50:50:200 g/vine/year). Potassium-heavy for vine vigor. Organic manure (10 kg/vine).",
+        "affectedParts": ["Roots", "Collar/Stem base", "Leaves", "Entire vine"],
+        "favorableConditions": "Heavy monsoon rainfall with waterlogging. Temperature 25-30°C. Poor drainage.",
+        "spreadMechanism": "Soilborne zoospores. Spread through water during monsoon. Infected soil and debris."
+      }
+    },
+    "Black Pepper Pollu Beetle Damage": {
+      "plants": ["Black Pepper"],
+      "knowledge": {
+        "description": "Pest damage from Pollu beetle (Longitarsus nigripennis) causing internal feeding in developing berries. Affected berries become hollow, light, and shriveled ('pollu' = hollow berry). Major cause of hollow berry in pepper.",
+        "scientificName": "Longitarsus nigripennis",
+        "type": "Pest/Insect",
+        "severity": "Moderate to High",
+        "cure": "Spray Quinalphos (0.05%) or Lambda-cyhalothrin during berry development. Two sprays at 20-day intervals from berry formation.",
+        "prevention": "Remove and destroy infested berries. Clean cultivation. Harvest early when berries start yellowing.",
+        "fertilizer": "Balanced NPK. Adequate potassium for berry development and filling.",
+        "affectedParts": ["Berries/Fruit"],
+        "favorableConditions": "During berry development period (May-August). Monsoon season.",
+        "spreadMechanism": "Adult beetles fly between vines. Eggs laid inside developing berries."
+      }
+    },
+    "Arecanut Yellow Leaf Disease": {
+      "plants": ["Arecanut", "Betel Nut"],
+      "knowledge": {
+        "description": "Phytoplasma disease causing yellowing of lower leaves progressing upward, crown narrowing with short erect leaves, reduced bunch size, and tapering of trunk. Most devastating disease of arecanut in India.",
+        "scientificName": "Candidatus Phytoplasma spp.",
+        "type": "Phytoplasma",
+        "severity": "Critical",
+        "cure": "No cure. Remove and destroy infected palms. Tetracycline trunk injection gives temporary remission but is not practical.",
+        "prevention": "Use disease-free seedlings from non-endemic areas. Control leafhopper vectors. Remove infected palms early to reduce inoculum.",
+        "fertilizer": "Balanced NPK (100:40:140 g/palm/year). Organic manure (12 kg/palm/year). Micronutrients.",
+        "affectedParts": ["Leaves", "Crown", "Trunk", "Bunches"],
+        "favorableConditions": "Endemic in Western Ghats region. Leafhopper vector activity.",
+        "spreadMechanism": "Transmitted by Proutista moesta (lace-wing bug/planthopper). Infected seedlings."
+      }
+    },
+    "Tobacco Mosaic Virus": {
+      "plants": ["Tobacco"],
+      "knowledge": {
+        "description": "Viral disease (TMV) causing light and dark green mottled mosaic on leaves, leaf curling and distortion, stunting, and reduced leaf quality. One of the first viruses ever discovered. Extremely stable and persistent.",
+        "scientificName": "Tobacco Mosaic Virus (TMV)",
+        "type": "Viral",
+        "severity": "High",
+        "cure": "No cure. Remove infected plants. Disinfect hands and tools with 10% trisodium phosphate or skim milk.",
+        "prevention": "Use TMV-resistant varieties. Workers must wash hands with soap before handling plants. No smoking in fields. Steam sterilize seedbeds.",
+        "fertilizer": "Balanced NPK. Optimal nutrition reduces symptom severity.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "The virus is extremely stable — survives in dried plant material for 50+ years. Any climate.",
+        "spreadMechanism": "Mechanical — touch, tools, contaminated hands. NOT insect-transmitted. Present in processed tobacco products."
+      }
+    },
+    "Jute Stem Rot": {
+      "plants": ["Jute"],
+      "knowledge": {
+        "description": "Fungal disease (Macrophomina phaseolina) causing dark brown to black stem lesions at or near soil level. Stems become brittle and break. Plants wilt and die. Minute sclerotia visible on infected tissue.",
+        "scientificName": "Macrophomina phaseolina",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Drench base of plants with Carbendazim (0.1%). Remove infected plants with roots.",
+        "prevention": "Seed treatment with Carbendazim + Thiram. Deep summer plowing. Crop rotation with rice. Apply Trichoderma viride.",
+        "fertilizer": "Balanced NPK (60:30:30 kg/ha). Potassium for stem strength. Avoid nitrogen excess.",
+        "affectedParts": ["Stems (base)", "Roots"],
+        "favorableConditions": "High temperature (30-35°C) with drought stress followed by rain.",
+        "spreadMechanism": "Soilborne sclerotia survive for years. Spread through contaminated soil and water."
+      }
+    },
+    "Pea Powdery Mildew": {
+      "plants": ["Pea", "Garden Pea"],
+      "knowledge": {
+        "description": "Fungal disease (Erysiphe pisi) causing white powdery growth on leaves, stems, and pods. Severe infections cause yellowing, drying, and premature senescence.",
+        "scientificName": "Erysiphe pisi",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply wettable Sulfur (0.25%) or Karathane (0.05%). Repeat at 15-day intervals.",
+        "prevention": "Plant resistant varieties. Early sowing to escape late-season mildew. Proper spacing.",
+        "fertilizer": "Balanced NPK. Phosphorus for root development. Rhizobium inoculation for nitrogen fixation.",
+        "affectedParts": ["Leaves", "Stems", "Pods"],
+        "favorableConditions": "Warm dry weather (20-25°C). Late-sown crops most affected. Low humidity.",
+        "spreadMechanism": "Wind-dispersed conidia."
+      }
+    },
+    "Pea Rust": {
+      "plants": ["Pea", "Garden Pea"],
+      "knowledge": {
+        "description": "Fungal disease (Uromyces viciae-fabae var. viciae-fabae) causing orange-brown pustules on leaves, stems, and pods. Severe infection causes premature drying.",
+        "scientificName": "Uromyces viciae-fabae",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Mancozeb (0.25%) or Propiconazole at first symptom. Repeat at 15-day intervals.",
+        "prevention": "Plant resistant varieties. Early sowing. Destroy crop debris after harvest.",
+        "fertilizer": "Balanced NPK. Potassium for disease resistance. Phosphorus for root vigor.",
+        "affectedParts": ["Leaves", "Stems", "Pods"],
+        "favorableConditions": "Cool humid weather (15-20°C) with dew.",
+        "spreadMechanism": "Wind-dispersed urediniospores."
+      }
+    },
+    "Carrot Alternaria Leaf Blight": {
+      "plants": ["Carrot"],
+      "knowledge": {
+        "description": "Fungal disease (Alternaria dauci) causing dark brown to black spots on carrot leaves and petioles. Spots coalesce causing leaf blight and die-back. Reduces root size and quality.",
+        "scientificName": "Alternaria dauci",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Mancozeb (0.25%) or Chlorothalonil at first symptom. Repeat at 10-14 day intervals.",
+        "prevention": "Use resistant varieties. Crop rotation (3 years). Hot water seed treatment. Avoid overhead irrigation.",
+        "fertilizer": "Balanced NPK. Adequate potassium for root development. Boron for root quality.",
+        "affectedParts": ["Leaves", "Petioles"],
+        "favorableConditions": "Warm humid weather (25-30°C) with frequent rain or dew.",
+        "spreadMechanism": "Wind and rain-dispersed conidia. Seed-borne."
+      }
+    },
+    "Sesame Phyllody": {
+      "plants": ["Sesame", "Til"],
+      "knowledge": {
+        "description": "Phytoplasma disease causing transformation of floral parts into green leaf-like structures (phyllody). Capsules replaced by leafy shoots. Plants remain green but produce no seed. Transmitted by leafhoppers.",
+        "scientificName": "Candidatus Phytoplasma spp.",
+        "type": "Phytoplasma",
+        "severity": "High",
+        "cure": "No cure. Rogue infected plants. Control leafhopper vectors (Orosius orientalis) with Imidacloprid.",
+        "prevention": "Early sowing. Control weed hosts. Insecticidal seed treatment. Resistant varieties where available.",
+        "fertilizer": "Balanced NPK (60:40:20 kg/ha). Adequate phosphorus for flowering.",
+        "affectedParts": ["Flowers", "Capsules", "Entire plant"],
+        "favorableConditions": "Warm weather with active leafhopper populations. Late-sown crops.",
+        "spreadMechanism": "Persistently transmitted by leafhopper (Orosius orientalis)."
+      }
+    },
+    "Castor Fusarium Wilt": {
+      "plants": ["Castor"],
+      "knowledge": {
+        "description": "Soilborne fungal disease (Fusarium oxysporum f. sp. ricini) causing progressive yellowing and wilting of castor plants from lower leaves upward. Vascular browning in stem cross-section.",
+        "scientificName": "Fusarium oxysporum f. sp. ricini",
+        "type": "Fungal",
+        "severity": "High",
+        "cure": "Seed treatment with Carbendazim + Thiram. Soil application of Trichoderma viride.",
+        "prevention": "Use resistant varieties (GCH-7, DCH-519). Crop rotation (3+ years). Deep summer plowing.",
+        "fertilizer": "Balanced NPK (60:40:40 kg/ha). Adequate potassium. Maintain soil pH 6.0-7.0.",
+        "affectedParts": ["Roots", "Stems (vascular)", "Entire plant"],
+        "favorableConditions": "Soil temperature 25-30°C. Acidic soils. Continuous castor cropping.",
+        "spreadMechanism": "Soilborne. Seed-borne. Contaminated soil and water."
+      }
+    },
+    "Sorghum Grain Mold": {
+      "plants": ["Sorghum", "Jowar"],
+      "knowledge": {
+        "description": "Complex disease involving multiple fungi (Fusarium spp., Aspergillus spp., Curvularia lunata) colonizing developing grain during wet weather at maturity. Grain becomes discolored, shriveled, and may contain mycotoxins.",
+        "scientificName": "Fusarium spp. / Aspergillus flavus / Curvularia lunata",
+        "type": "Fungal (complex)",
+        "severity": "High",
+        "cure": "Spray Mancozeb (0.25%) or Carbendazim at 50% flowering and repeat at milk stage.",
+        "prevention": "Use grain mold-resistant varieties with hard/colored grain. Timely harvesting. Avoid rainy-season maturity.",
+        "fertilizer": "Balanced NPK (80:40:40 kg/ha). Adequate nitrogen for grain filling. Zinc supplements.",
+        "affectedParts": ["Grain/Seeds"],
+        "favorableConditions": "Rain at grain filling/maturity. Temperature 25-30°C. High humidity.",
+        "spreadMechanism": "Airborne spores colonize grain through exposed panicle. Rain promotes infection."
+      }
+    },
+    "Millet Downy Mildew": {
+      "plants": ["Pearl Millet", "Bajra", "Finger Millet", "Ragi"],
+      "knowledge": {
+        "description": "Oomycete disease (Sclerospora graminicola) causing chlorotic streaks on leaves, 'green ear' — floral parts transformed into green leafy structures, and stunted growth. Called 'green ear disease'. Major disease of pearl millet in India.",
+        "scientificName": "Sclerospora graminicola",
+        "type": "Oomycete",
+        "severity": "Very High",
+        "cure": "No field cure. Remove green ear heads. Seed treatment with Metalaxyl (Apron 35 SD at 6 g/kg seed).",
+        "prevention": "Mandatory seed treatment with Metalaxyl before sowing. Use resistant hybrids. Crop rotation.",
+        "fertilizer": "Balanced NPK (60:30:30 kg/ha). Zinc application (25 kg ZnSO₄/ha). Adequate nitrogen for tillering.",
+        "affectedParts": ["Leaves", "Earheads", "Entire plant"],
+        "favorableConditions": "Cool humid weather (20-25°C) with heavy dew. Early seedling stage most susceptible.",
+        "spreadMechanism": "Soilborne oospores infect seedlings. Wind-dispersed sporangia for secondary spread. Seed-borne."
+      }
+    },
+    "Barley Net Blotch": {
+      "plants": ["Barley"],
+      "knowledge": {
+        "description": "Fungal disease (Pyrenophora teres) causing distinctive net-like pattern of brown longitudinal and transverse striations on barley leaves ('net blotch'). Also a spot form exists. Reduces photosynthesis and grain quality.",
+        "scientificName": "Pyrenophora teres",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Propiconazole or Tebuconazole at flag leaf stage.",
+        "prevention": "Use resistant varieties. Crop rotation. Destroy infected stubble. Seed treatment.",
+        "fertilizer": "Balanced NPK. Adequate nitrogen for grain fill. Potassium for disease resistance.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Cool wet weather (15-25°C) with prolonged leaf wetness.",
+        "spreadMechanism": "Wind and rain-dispersed conidia from infected stubble. Seed-borne."
+      }
+    },
+    "Green Gram (Mung Bean) Yellow Mosaic Virus": {
+      "plants": ["Green Gram", "Mung Bean", "Moong"],
+      "knowledge": {
+        "description": "Viral disease (MYMV, Begomovirus) transmitted by whitefly causing bright yellow mosaic patches on leaves alternating with green areas. Severely infected plants produce few or no pods.",
+        "scientificName": "Mungbean Yellow Mosaic Virus (MYMV)",
+        "type": "Viral",
+        "severity": "Very High",
+        "cure": "No cure. Rogue infected plants early. Control whitefly with Imidacloprid (0.3 ml/L) or Thiamethoxam.",
+        "prevention": "Use resistant varieties (SML-668, Pusa Vishal). Timely sowing. Border crop of maize as barrier. Yellow sticky traps.",
+        "fertilizer": "Balanced NPK (20:40:20 kg/ha). Rhizobium inoculation. Phosphorus for root vigor.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Warm weather with high whitefly populations. Kharif (rainy) season.",
+        "spreadMechanism": "Persistently transmitted by whitefly (Bemisia tabaci)."
+      }
+    },
+    "Black Gram Leaf Crinkle Virus": {
+      "plants": ["Black Gram", "Urad"],
+      "knowledge": {
+        "description": "Viral disease causing crinkling, curling, and rugosity (puckering) of leaves with reduced leaf size. Plants become bushy with shortened internodes. Pod setting severely reduced.",
+        "scientificName": "Urdbean Leaf Crinkle Virus (ULCV)",
+        "type": "Viral",
+        "severity": "High",
+        "cure": "No cure. Remove infected plants. Control aphid and whitefly vectors.",
+        "prevention": "Resistant varieties. Seed treatment with Imidacloprid. Border crops. Avoid late sowing.",
+        "fertilizer": "Balanced NPK (20:40:20 kg/ha). Rhizobium + PSB inoculation.",
+        "affectedParts": ["Leaves", "Entire plant"],
+        "favorableConditions": "Warm humid weather with vector activity.",
+        "spreadMechanism": "Transmitted by multiple vectors including seed transmission (5-40%)."
+      }
+    },
+    "Nutrient Deficiency Chlorosis": {
+      "plants": ["General/Multiple crops"],
+      "knowledge": {
+        "description": "Yellowing of leaves due to insufficient iron, nitrogen, magnesium, or manganese for chlorophyll production. Interveinal chlorosis (veins stay green, tissue yellows) typically indicates iron or manganese deficiency. Uniform yellowing suggests nitrogen deficiency.",
+        "scientificName": "N/A — Abiotic disorder",
+        "type": "Deficiency",
+        "severity": "Variable",
+        "cure": "Apply chelated micronutrients (iron EDDHA, manganese sulfate) as foliar spray for quick correction. Adjust soil pH if too alkaline (iron deficiency) or too acidic.",
+        "prevention": "Maintain soil pH 6.0-7.0 for optimal nutrient availability. Regular soil testing every 2-3 years. Balanced fertilization program.",
+        "fertilizer": "Chelated iron (Fe-EDDHA at 10 g/L foliar spray) + magnesium sulfate (5 g/L). Balanced NPK as base fertilizer. Adjust soil pH with sulfur (alkaline soils) or lime (acidic soils).",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Alkaline soils (pH >7.5) for iron/manganese deficiency. Sandy/leached soils for nitrogen/magnesium deficiency.",
+        "spreadMechanism": "N/A — not a disease. Caused by soil nutrient imbalance."
+      }
+    },
+    "Moderate Disease Blight Leaf Spot": {
+      "plants": ["General/Multiple crops"],
+      "knowledge": {
+        "description": "Computer vision detected moderate disease symptoms — likely blight or leaf spot complex with 10-30% leaf area affected. Pattern analysis suggests fungal origin based on spot morphology and distribution.",
+        "scientificName": "Various pathogens",
+        "type": "Fungal (probable)",
+        "severity": "Moderate",
+        "cure": "Apply broad-spectrum fungicide (Mancozeb 0.25% or Copper oxychloride 0.25%). Remove infected foliage. Improve air circulation.",
+        "prevention": "Crop rotation with unrelated crops. Proper spacing for air flow. Avoid overhead irrigation. Regular scouting.",
+        "fertilizer": "Balanced NPK with potassium emphasis. Avoid excess nitrogen that promotes lush, disease-susceptible growth.",
+        "affectedParts": ["Leaves"],
+        "favorableConditions": "Warm humid conditions with poor air circulation.",
+        "spreadMechanism": "Wind and rain-dispersed spores from infected tissue."
+      }
+    },
+    "Severe Disease Rot": {
+      "plants": ["General/Multiple crops"],
+      "knowledge": {
+        "description": "Computer vision detected severe disease or rot affecting more than 50% of the leaf/plant area. Advanced infection stage with extensive tissue necrosis, possible secondary infections, and significant crop damage.",
+        "scientificName": "Various pathogens (advanced stage)",
+        "type": "Multiple (advanced)",
+        "severity": "Very High",
+        "cure": "Remove and destroy infected plants immediately to prevent spread to healthy plants. Apply systemic fungicide (Carbendazim 0.1% or Metalaxyl + Mancozeb) to surrounding survivors.",
+        "prevention": "Use certified disease-free planting material. Implement strict crop rotation (3+ year cycle). Regular scouting for early detection. Maintain balanced nutrition.",
+        "fertilizer": "After recovery: balanced NPK to restore plant vigor. Foliar micronutrient spray for quick recovery. Organic amendments to improve soil health.",
+        "affectedParts": ["Leaves", "Stems", "Potentially entire plant"],
+        "favorableConditions": "Extended periods of warm humid weather. Dense plantings with poor air circulation.",
+        "spreadMechanism": "Multiple pathways depending on specific pathogen — wind, rain, soil, insects."
+      }
+    },
+    "Early Blight (General)": {
+      "plants": ["Tomato", "Potato", "Eggplant", "Pepper"],
+      "knowledge": {
+        "description": "Fungal disease (Alternaria spp.) causing concentric ring target-like lesions on leaves of various solanaceous crops. Begins on older/lower leaves and progresses upward.",
+        "scientificName": "Alternaria solani / A. alternata",
+        "type": "Fungal",
+        "severity": "Moderate to High",
+        "cure": "Apply Chlorothalonil, Mancozeb, or copper-based fungicides every 7-10 days during humid weather.",
+        "prevention": "Crop rotation (2-3 years). Proper plant spacing. Water at base, not overhead. Mulching.",
+        "fertilizer": "Balanced NPK. Extra potassium for disease resistance. Avoid excessive nitrogen.",
+        "affectedParts": ["Leaves", "Stems", "Fruit/Tubers"],
+        "favorableConditions": "Warm temperatures (24-29°C) with alternating wet and dry periods.",
+        "spreadMechanism": "Wind-dispersed conidia. Survives in crop debris."
+      }
+    },
+    "Late Blight (General)": {
+      "plants": ["Tomato", "Potato", "Eggplant"],
+      "knowledge": {
+        "description": "Oomycete disease (Phytophthora infestans) causing fast-spreading water-soaked dark lesions with white sporangia on undersides. Highly destructive — can destroy crops in days.",
+        "scientificName": "Phytophthora infestans",
+        "type": "Oomycete",
+        "severity": "Critical",
+        "cure": "Apply Mancozeb, Metalaxyl, or Copper-based fungicides immediately upon detection. Remove infected plants — do NOT compost.",
+        "prevention": "Use resistant varieties. Monitor weather conditions. Avoid overhead irrigation. Destroy volunteer plants.",
+        "fertilizer": "Phosphorus and potassium-rich fertilizer. Limit excess nitrogen that creates dense humid canopy.",
+        "affectedParts": ["Leaves", "Stems", "Fruit/Tubers"],
+        "favorableConditions": "Cool nights (10-15°C), warm days (15-25°C), high humidity >90%.",
+        "spreadMechanism": "Wind-dispersed sporangia. Extremely rapid epidemic potential."
+      }
+    },
+    "Bacterial Spot (General)": {
+      "plants": ["Tomato", "Pepper", "Peach", "General"],
+      "knowledge": {
+        "description": "Bacterial disease (Xanthomonas spp.) causing small dark raised spots with yellow halos on leaves and raised scab-like lesions on fruit.",
+        "scientificName": "Xanthomonas spp.",
+        "type": "Bacterial",
+        "severity": "Moderate to High",
+        "cure": "Apply copper-based bactericides + Mancozeb every 5-7 days. Remove severely infected plant material.",
+        "prevention": "Disease-free seed and transplants. Avoid overhead irrigation. Crop rotation. Sanitize tools.",
+        "fertilizer": "Balanced NPK with calcium supplements for cell wall strength.",
+        "affectedParts": ["Leaves", "Fruit", "Stems"],
+        "favorableConditions": "Warm humid weather (24-30°C) with frequent rain.",
+        "spreadMechanism": "Seed-borne. Rain splash. Wind-driven rain."
+      }
+    },
+    "Powdery Mildew (General)": {
+      "plants": ["Multiple crops"],
+      "knowledge": {
+        "description": "Fungal disease causing white powdery coating on leaves reducing photosynthesis. Unlike most fungi, thrives in dry conditions with high humidity but no free water.",
+        "scientificName": "Various (Erysiphe spp., Podosphaera spp., Oidium spp.)",
+        "type": "Fungal",
+        "severity": "Moderate",
+        "cure": "Apply sulfur-based fungicides, potassium bicarbonate, or neem oil. Remove infected plant parts.",
+        "prevention": "Good air circulation. Avoid overhead watering. Plant resistant varieties. Proper spacing.",
+        "fertilizer": "Balanced NPK with potassium emphasis. Silicon-based supplements strengthen cell wall defenses.",
+        "affectedParts": ["Leaves", "Stems", "Flowers"],
+        "favorableConditions": "Warm dry days (20-30°C) with cool humid nights.",
+        "spreadMechanism": "Wind-dispersed conidia. Does not require free water on leaf surface."
+      }
+    },
+    "Healthy (General)": {
+      "plants": ["General/All crops"],
+      "knowledge": {
+        "description": "No disease detected. Plant appears healthy with normal leaf coloration, no spots, lesions, or discoloration visible. Continue regular monitoring and care.",
+        "scientificName": "N/A",
+        "type": "Healthy",
+        "severity": "None",
+        "cure": "No treatment needed. Continue regular care and monitoring for early signs of disease.",
+        "prevention": "Maintain good agricultural practices: proper watering, balanced fertilization, crop rotation, and regular scouting for early disease detection.",
+        "fertilizer": "Standard balanced NPK (10-10-10) fertilizer once per month during growing season. Adjust based on soil test results and crop requirements.",
+        "affectedParts": [],
+        "favorableConditions": "N/A",
+        "spreadMechanism": "N/A"
+      }
+    }
+  }
+}

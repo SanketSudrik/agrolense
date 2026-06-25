@@ -1,0 +1,309 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 50%, #fff8e1 100%);
+  padding: 24px;
+  /* Increased from 16px for better container isolation */
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  min-height: 560px;
+  /* Increased from 500px to perfectly prevent 100% zoom truncation */
+  background: #fff;
+  border-radius: 24px;
+  /* Softer, modern border nesting */
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(27, 94, 32, 0.1), 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+// ─── Branding Panel ───
+.auth-branding {
+  flex: 1.1;
+  background: linear-gradient(160deg, #1B5E20 0%, #2E7D32 40%, #43A047 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 360px;
+    /* Scaled up decorative circles */
+    height: 360px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    top: -80px;
+    right: -80px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    bottom: -50px;
+    left: -50px;
+  }
+}
+
+.branding-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+
+  .branding-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #A5D6A7;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0 0 12px;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+}
+
+.branding-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    strong {
+      font-size: 1.25rem;
+      color: #C8E6C9;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      margin-top: 2px;
+      letter-spacing: 0.3px;
+    }
+  }
+}
+
+// ─── Form Panel ───
+.auth-form-panel {
+  flex: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 360px;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1B5E20;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    color: #64748b;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    /* Reduced from 36px to secure key height spacing for the registration inputs */
+  }
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* Increased input vertical padding/gaps */
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 44px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 12px;
+  margin-top: 16px;
+  background: linear-gradient(135deg, #1B5E20, #2E7D32);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+
+  &:hover:not([disabled]) {
+    transform: translateY(-1px);
+    /* Slight safety taming to keep interaction inside container box boundary */
+    /* Premium micro-interaction */
+    box-shadow: 0 8px 24px rgba(27, 94, 32, 0.25);
+  }
+
+  &:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+
+  .btn-spinner {
+    display: inline-block;
+  }
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 24px;
+  /* Scaled from 28px to maintain perfect vertical consistency under the form wrapper */
+  font-size: 0.95rem;
+  color: #64748b;
+
+  a {
+    color: #2E7D32;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ─── Responsive Adjustments ───
+.top-bar {
+  position: absolute;
+  top: 32px;
+  /* Pushed out cleanly from content box */
+  left: 32px;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .auth-container {
+    max-width: 920px;
+  }
+
+  .auth-branding {
+    padding: 40px 32px;
+  }
+
+  .auth-form-panel {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 16px;
+  }
+
+  .auth-container {
+    flex-direction: column;
+    max-width: 480px;
+    min-height: auto;
+  }
+
+  .auth-branding {
+    padding: 48px 24px;
+
+    .branding-icon {
+      width: 56px;
+      height: 56px;
+      font-size: 56px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .branding-stats {
+      display: none;
+    }
+
+    /* Hide stats blocks on smaller mobile arrays */
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .top-bar {
+    top: 20px;
+    left: 20px;
+  }
+
+  .auth-form-panel {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-page {
+    padding: 12px;
+  }
+
+  .auth-container {
+    border-radius: 16px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    height: 48px;
+    font-size: 1rem;
+  }
+}

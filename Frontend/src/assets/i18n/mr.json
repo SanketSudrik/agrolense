@@ -1,0 +1,57 @@
+{
+  "NAV": {
+    "DASHBOARD": "डॅशबोर्ड",
+    "UPLOAD_IMAGE": "प्रतिमा अपलोड करा",
+    "PREDICTION_HISTORY": "इतिहास",
+    "REPORTS": "अहवाल",
+    "PROFILE": "प्रोफाइल",
+    "LOGOUT": "लॉगआउट"
+  },
+  "DASHBOARD": {
+    "FARMER_TITLE": "शेतकरी डॅशबोर्ड",
+    "ADMIN_TITLE": "अ‍ॅडमिन डॅशबोर्ड",
+    "TOTAL_PREDICTIONS": "एकूण अंदाज",
+    "RECENT_DISEASES": "अलीकडील रोग",
+    "QUICK_ACTIONS": "त्वरित क्रिया",
+    "TOTAL_USERS": "एकूण वापरकर्ते",
+    "TOTAL_DISEASES": "एकूण रोग",
+    "TOTAL_CROPS": "एकूण पिके",
+    "SYSTEM_MANAGEMENT": "सिस्टम व्यवस्थापन",
+    "SETTINGS": "सेटिंग्ज",
+    "HEALTHY_PLANTS": "निरोगी वनस्पती"
+  },
+  "UPLOAD": {
+    "TITLE": "पिकाची प्रतिमा अपलोड करा",
+    "SUBTITLE": "आमचे AI रोगांचे निदान करण्यासाठी प्रतिमेचे विश्लेषण करेल",
+    "DRAG_DROP": "येथे क्लिक करा किंवा पिकाच्या पानाची प्रतिमा ड्रॅग करा",
+    "ANALYZE": "विश्लेषण करा"
+  },
+  "RESULT": {
+    "TITLE": "विश्लेषण निकाल",
+    "DISEASE_NAME": "आढळलेला रोग",
+    "CONFIDENCE": "विश्वासार्हता स्कोअर",
+    "FERTILIZER_RECOMMENDATION": "खत शिफारस",
+    "APPLICATION_RATE": "वापराचे प्रमाण",
+    "SCAN_ANOTHER": "दुसरी प्रतिमा स्कॅन करा",
+    "PLANT_CROP": "वनस्पती / पीक",
+    "GENERAL_CROP": "सामान्य पीक",
+    "DISEASE_DESCRIPTION": "रोगाचे वर्णन",
+    "TREATMENT_PLAN": "उपचार योजना",
+    "PREVENTION_STRATEGY": "प्रतिबंधात्मक धोरण"
+  },
+  "HISTORY": {
+    "TITLE": "इतिहास",
+    "DATE": "तारीख",
+    "DISEASE": "रोग",
+    "CONFIDENCE": "विश्वासार्हता",
+    "IMAGE": "प्रतिमा",
+    "NO_DATA": "अद्याप कोणताही इतिहास आढळला नाही.",
+    "VIEW_HISTORY": "इतिहास पहा",
+    "HISTORY_SUBTITLE": "मागील रोग निदानांचे पुनरावलोकन करा, पिकांच्या आरोग्याचा मागोवा घ्या आणि शिफारस केलेल्या उपचारांची पुन्हा पाहणी करा."
+  },
+  "COMMON": {
+    "CANCEL": "रद्द करा",
+    "BACK_TO_DASHBOARD": "डॅशबोर्डवर परत जा",
+    "ACTIONS": "क्रिया"
+  }
+}
