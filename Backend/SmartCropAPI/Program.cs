@@ -9,7 +9,10 @@ using SmartCropAPI.Helpers;
 using SmartCropAPI.Middleware;
 using SmartCropAPI.Models;
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5063";
+var builder = WebApplication.CreateBuilder(args);
+
+// Railway/Docker compatible port
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 // Configure PostgreSQL Database
@@ -34,22 +37,10 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyHeader()
               .AllowAnyMethod()
-              .WithOrigins("http://localhost:4200") // Angular local dev
+              .WithOrigins("http://localhost:4200")
               .AllowCredentials();
     });
 });
-
-// Configure PostgreSQL Database
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-if (string.IsNullOrWhiteSpace(connectionString))
-{
-    throw new Exception(
-        "ConnectionStrings__DefaultConnection is missing in Railway Variables.");
-}
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(connectionString));
 
 // Configure Dependency Injection using extension method
 builder.Services.AddApplicationServices();
