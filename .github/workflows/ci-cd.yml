@@ -101,4 +101,5 @@ jobs:
         run: |
           npm install -g vercel
           cd Frontend
-          vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --name=agrolense
+          vercel link --token=${{ secrets.VERCEL_TOKEN }} --yes --project=agrolense
+          vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
